@@ -1,0 +1,48 @@
+﻿@model BomoBana.Areas.Admin.ProvinceViewModel
+<div id="add-contact" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">ارسال فایل اکسل لیست استان ها</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal form-material" enctype="multipart/form-data" asp-area="Admin"
+                      asp-action="AddProvinceToCountryWithExcel" asp-route-CountryId="@Model.CountryId" asp-controller="Locations" method="post">
+                    <div class="form-group row">
+                        <div asp-validation-summary="ModelOnly"></div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12 m-b-20">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">فایل اکسل</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                                           asp-for="ProvinceExel.File" class="custom-file-input">
+                                    <label class="custom-file-label" for="Image">انتخاب فایل</label>
+                                </div>
+                            </div>
+                            <small id="textHelp" class="form-text text-muted">فرمت فایل باید xlsx باشد</small>
+                            <span asp-validation-for="ProvinceExel.File"></span>
+                            <div class="show-file">
+                                <span class="badge badge-success ml-auto count-file">1</span>
+                                <output class="element-to-paste-filename"></output>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-info waves-effect">ارسال</button>
+                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">انصراف</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+

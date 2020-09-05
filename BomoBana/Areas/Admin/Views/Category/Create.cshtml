@@ -1,0 +1,173 @@
+﻿@model BomoBana.Areas.Admin.CreateCategoryDto
+@{
+    ViewData["Title"] = "ایجاد دسته بندی";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section Style{
+    <link rel="stylesheet" type="text/css" href="~/admin/assets/libs/select2/dist/css/select2.min.css">
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <form class="form-horizontal striped-rows b-form needs-validation" novalidate enctype="multipart/form-data"
+                  asp-action="Create" asp-controller="Category" asp-area="Admin">
+                <div class="card-body">
+                    <h4 class="card-title">دسته بندی جدید</h4>
+                    <div class="form-group row">
+                        <div asp-validation-summary="ModelOnly"></div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Title" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" asp-for="Title" class="form-control" placeholder="عنوان">
+                            <span asp-validation-for="Title"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="ParentCategoryId" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <select class="select2 form-control" name="LoadCategory" id="LoadCategory"
+                                    placeholder="انتخاب دسته بندی اصلی" style="width: 50%;height: 40px;">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="DivSub">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <select class="select2 form-control" name="LoadSubCategory" id="LoadSubCategory"
+                                    placeholder="انتخاب زیر دسته اصلی" style="width: 50%;height: 40px;">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Image" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Upload</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" accept="image/x-png" asp-for="Image" class="custom-file-input">
+                                    <label class="custom-file-label" asp-for="Image">انتخاب عکس</label>
+                                </div>
+                            </div>
+                            <small id="textHelp" class="form-text text-muted">فرمت عکس باید png باشد</small>
+                            <span asp-validation-for="Image"></span>
+                            <div class="col-sm-2" id="image-holder">
+                            </div>
+                        </div>                  
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Description" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea type="text" asp-for="Description" style="height:150px" class="form-control" placeholder="توضیحات"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="IsActive" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" checked asp-for="IsActive" type="checkbox">
+                                <label class="form-check-label" asp-for="IsActive">  فعال / غیرفعال  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="card-body">
+                    <div class="form-group m-b-0 text-right">
+                        <button type="submit" class="btn btn-info waves-effect waves-light">ذخیره</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/Admin/assets/libs/select2/dist/js/select2.full.min.js"></script>
+    <script src="~/Admin/assets/libs/select2/dist/js/select2.min.js"></script>
+    <script src="~/Admin/js/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Admin/assets/libs/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="~/Admin/js/ToastrNotification.js"></script>
+    <script src="~/Admin/js/AjaxRequest.js"></script>
+    <script>
+        $("#DivSub").hide();
+        $("#DivChild").hide();
+        $("#LoadCategory").select2({
+            placeholder: "انتخاب دسته بندی اصلی",
+            allowClear: true,
+            multiple: false,
+            ajax: {
+                url: 'LoadCategory',
+                width: 'resolve',
+                data: function (params) {
+                    return {
+                        item: params.term// search term
+                    };
+                },
+                processResults: function (data) {
+                    return {
+                        results: data.items
+                    };
+                },
+                minimumInputLength: 2,
+                width: 'resolve',
+                cache: true
+            },
+        });
+        $("#LoadCategory").on("select2:select", function (e) {
+            var newOption = new Option("انتخاب زیر دسته بندی", 0, true, true);
+            $('#LoadSubCategory').append(newOption).trigger('change');
+            var select_val = $(e.currentTarget).val();
+            $("#DivSub").fadeIn();
+            $("#LoadSubCategory").select2({
+                placeholder: "انتخاب زیر دسته بندی",
+                allowClear: true,
+                multiple: false,
+                ajax: {
+                    url: 'LoadSubCategory',
+                    width: 'resolve',
+                    data: function (params) {
+                        return {
+                            categoryid: select_val,
+                            item: params.term// search term
+                        };
+                    },
+                    processResults: function (data) {
+                        return {
+                            results: data.items
+                        };
+                    },
+                    minimumInputLength: 2,
+                    width: 'resolve',
+                    cache: true
+                },
+            });
+        });
+    </script>
+}

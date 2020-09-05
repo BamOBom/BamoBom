@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+      <member name="P:MyApi.Controllers.v1.AddressDto.Country">
+        <summary>
+          3-letter ISO country code
+        </summary>
+        <example>Iran</example>
+      </member>
+      <member name="P:MyApi.Controllers.v1.AddressDto.City">
+        <summary>
+          Name of city
+        </summary>
+        <example>Seattle</example>
+      </member>
+    </members>
+</doc>

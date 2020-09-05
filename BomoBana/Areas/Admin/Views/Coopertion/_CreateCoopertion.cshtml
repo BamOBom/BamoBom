@@ -1,0 +1,79 @@
+﻿@model BomoBana.Areas.Admin.CreateCoopertionDto
+<div id="add-Coopertion" class="modal fade in" tabindex="-1"
+     role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="max-width: 650px!important;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">درخواست جدید</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal form-material needs-validation" novalidate enctype="multipart/form-data"
+                      asp-area="Admin" asp-action="Create" asp-controller="Coopertion"
+                      data-ajax-success="Success_Ajax_Add"
+                      data-ajax-failure="Failure_Ajax" data-ajax="true" data-ajax-method="POST">
+                    <div class="form-group row">
+                        <div asp-validation-summary="ModelOnly"></div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Title" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-10">
+                            <input type="text" asp-for="Title" class="form-control" placeholder="عنوان">
+                            <span asp-validation-for="Title"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                @*<label asp-for="IsRequired" class="control-label col-form-label"></label>*@
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" checked asp-for="IsRequired" type="checkbox">
+                                <label class="form-check-label" asp-for="IsRequired"> نیاز فوری </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                @*<label asp-for="IsActive" class="control-label col-form-label"></label>*@
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" checked asp-for="IsActive" type="checkbox">
+                                <label class="form-check-label" asp-for="IsActive">  فعال / غیرفعال  </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Description" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-10">
+                            <textarea type="text" asp-for="Description" style="height:150px" class="form-control" placeholder="توضیحات"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-info waves-effect">ارسال</button>
+                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">انصراف</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+
+

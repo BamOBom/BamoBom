@@ -1,0 +1,112 @@
+﻿@model BomoBana.Areas.Admin.LoginViewModel
+@{
+    ViewData["Title"] = "ورود";
+    Layout = "~/Areas/Admin/Views/Shared/_Login.cshtml";
+
+    //var query = ViewContext.HttpContext.Request.Query;
+    //if (query.ContainsKey("returnUrl"))
+    //{
+    //    Model.ReturnUrl = query["returnUrl"];
+    //}
+}
+<div id="loginform">
+    <div class="logo">
+        <span class="db"><img src="~/admin/assets/images/logo-icon.png" alt="logo" /></span>
+        <h5 class="font-medium m-b-20">ورود به مدیریت سامانه</h5>
+        @if (TempData["ResetPassword"] != null)
+        {
+            <span>@TempData["ResetPassword"].ToString()</span>
+        }
+    </div>
+    <!-- Form -->
+    <div class="row">
+        <div class="col-12">
+            <form class="form-horizontal m-t-20" id="loginform" asp-area="Admin" asp-action="Login"
+                  asp-controller="Account" method="post" asp-route-returnUrl="@Model.ReturnUrl">
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="ti-user"></i></span>
+                    </div>
+                    <input type="text" asp-for="@Model.Email" class="form-control form-control-lg" placeholder="نام کاربری" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon2"><i class="ti-pencil"></i></span>
+                    </div>
+                    <input type="hidden" asp-for="@Model.PhoneNumber" value="user">
+                    <input type="password" asp-for="@Model.Password" class="form-control form-control-lg" placeholder="گذرواژه" aria-label="Password" aria-describedby="basic-addon1">
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" asp-for="@Model.RemmeberMe" class="custom-control-input" id="RemmeberMe">
+                            <label class="custom-control-label" asp-for="@Model.RemmeberMe" for="RemmeberMe">مرا به خاطر بسپار</label>
+                            <a href="javascript:void(0)" id="to-recover" class="text-dark float-right"><i class="fa fa-lock m-r-5"></i> فراموشی رمز عبور ؟</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <div class="col-xs-12 p-b-20">
+                        <button class="btn btn-block btn-lg btn-info" type="submit">ورود</button>
+                    </div>
+                    <div asp-validation-summary="ModelOnly"></div>
+                    <span asp-validation-for="@Model.Email"></span>
+                    <span asp-validation-for="@Model.Password"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="recoverform">
+    <div class="logo">
+        <span class="db"><img src="~/Admin/assets/images/logo-icon.png" alt="logo" /></span>
+        <h5 class="font-medium m-b-20">بازیابی گذرواژه</h5>
+        <span>لطفا شماره همراه خود را وارد نمائید!</span>
+    </div>
+    <div class="row m-t-20">
+        <!-- Form -->
+        <form class="col-12" asp-area="Admin" asp-action="ForgotPassword"
+              asp-controller="Account" method="post" asp-route-returnurl="">
+            <!-- email -->
+            <div class="form-group row">
+                <div class="col-12">
+                    <input class="form-control form-control-lg" type="text" asp-for="@Model.PhoneNumber" placeholder="شماره همراه">
+                    <input type="hidden" asp-for="@Model.Email" value="user">
+                    <input type="hidden" asp-for="@Model.Password" value="user">
+                </div>
+            </div>
+            <!-- pwd -->
+            <div class="row m-t-20">
+                <div class="col-12">
+                    <button class="btn btn-block btn-lg btn-danger" type="submit" name="action">ارسال</button>
+                </div>
+                <br />
+                <div class="col-12">
+                    <a href="javascript:void(0)" id="to-login" class="btn btn-block btn-lg btn-info">
+                        بازگشت
+                    </a>
+                </div>
+                <div asp-validation-summary="ModelOnly"></div>
+                <span asp-validation-for="@Model.PhoneNumber"></span>
+
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/Admin/VueJs/vue/vue.min.js"></script>
+    <script>
+        var loginForget = new Vue({
+            el: "loginForget",
+            data: {
+                token: "",
+                phone: "",
+            },
+            methods: {
+
+            }
+        });
+    </script>
+}

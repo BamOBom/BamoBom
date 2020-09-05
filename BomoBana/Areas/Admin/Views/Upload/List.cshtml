@@ -1,0 +1,38 @@
+﻿@model IEnumerable< BomoBana.Areas.Admin.UploadListDto>
+@using Common
+@{
+    ViewData["Title"] = "لیست آپلود";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section Style{
+    <link href="~/Admin/assets/libs/magnific-popup/dist/magnific-popup.css" rel="stylesheet" />
+}
+<div class="row el-element-overlay">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <div class="el-card-item">
+                    <div class="el-card-avatar el-overlay-1">
+                        <img style="height:200px!important" src="@Url.Content(string.Format(ApplicationPathes.UploadCenter.VirtualFolder, item.File))" alt="user" />
+                        <div class="el-overlay">
+                            <ul class="list-style-none el-info">
+                                <li class="el-item"><a class="btn default btn-outline image-popup-vertical-fit el-link" href="@Url.Content(string.Format(ApplicationPathes.UploadCenter.VirtualFolder, item.File))"><i class="sl-icon-magnifier"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="el-card-content">
+                        <h4 class="m-b-0" style="padding: 5px;font-size: 15px;">Url فایل</h4> 
+                        <input type="text" style="background:#b7ff0954" value="@item.Url" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
+
+@section Scripts{
+    <script src="~/Admin/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="~/Admin/assets/libs/magnific-popup/meg.init.js"></script>
+}

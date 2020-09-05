@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BomoBana</name>
+    </assembly>
+    <members>
+        <member name="M:BomoBana.BaseController.SuccessNotification(System.String,System.Boolean)">
+            <summary>
+            Display success notification
+            </summary>
+            <param name="message">Message</param>
+            <param name="persistForTheNextRequest">A value indicating whether a message should be persisted for the next request</param>
+        </member>
+        <member name="M:BomoBana.BaseController.ErrorNotification(System.String,System.Boolean)">
+            <summary>
+            Display error notification
+            </summary>
+            <param name="message">Message</param>
+            <param name="persistForTheNextRequest">A value indicating whether a message should be persisted for the next request</param>
+        </member>
+        <member name="M:BomoBana.BaseController.ErrorNotification(System.Exception,System.Boolean,System.Boolean)">
+            <summary>
+            Display error notification
+            </summary>
+            <param name="exception">Exception</param>
+            <param name="persistForTheNextRequest">A value indicating whether a message should be persisted for the next request</param>
+            <param name="logException">A value indicating whether exception should be logged</param>
+        </member>
+        <member name="M:BomoBana.BaseController.AddNotification(EnumValue.NotifyType,System.String,System.Boolean)">
+            <summary>
+            Display notification
+            </summary>
+            <param name="type">Notification type</param>
+            <param name="message">Message</param>
+            <param name="persistForTheNextRequest">A value indicating whether a message should be persisted for the next request</param>
+        </member>
+        <member name="T:BomoBana.Extensions.AjaxButtonTagHelper">
+            <summary>
+            You can use Ajax Tag Helper to submit forms as AJAX in Asp Net Core.
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxButtonTagHelper.Controller">
+            <summary>
+            set controller    (should not be empty)
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxButtonTagHelper.Action">
+            <summary>
+            set action       (should not be empty)
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxButtonTagHelper.Area">
+            <summary>
+            set area
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxButtonTagHelper.FormId">
+            <summary>
+            set form id       (should not be empty)
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxButtonTagHelper.Method">
+            <summary>
+            set method (default => post)
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxButtonTagHelper.SuccessFunction">
+            <summary>
+            Customize function success (Enter the name of the custom function) default => null  
+            example create function successFunction(data){ code }
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxButtonTagHelper.FailureFunction">
+            <summary>
+            Customize function failure (Enter the name of the custom function) default => null
+            example create function failureFunction(data){ code }
+            </summary>
+        </member>
+        <member name="T:BomoBana.Extensions.AjaxActionTagHelper">
+            <summary>
+            Ajax Action Helper
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxActionTagHelper.Controller">
+            <summary>
+            set controller    (should not be empty)
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxActionTagHelper.Action">
+            <summary>
+            set action       (should not be empty)
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxActionTagHelper.Area">
+            <summary>
+            set area
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxActionTagHelper.Data">
+            <summary>
+            set data id           (should not be empty)
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxActionTagHelper.Method">
+            <summary>
+            set method (default => post)
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxActionTagHelper.SuccessFunction">
+            <summary>
+            Customize function success (Enter the name of the custom function) default => null  
+            example create function successFunction(data){ code }
+            </summary>
+        </member>
+        <member name="P:BomoBana.Extensions.AjaxActionTagHelper.FailureFunction">
+            <summary>
+            Customize function failure (Enter the name of the custom function) default => null
+            example create function failureFunction(data){ code }
+            </summary>
+        </member>
+    </members>
+</doc>

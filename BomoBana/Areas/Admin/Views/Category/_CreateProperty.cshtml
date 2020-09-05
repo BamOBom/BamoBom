@@ -1,0 +1,72 @@
+﻿@model BomoBana.Areas.Admin.CategoryPropertyViewModel
+@using EnumValue;
+<div id="PropertyCategoryLoad" class="modal fade in" tabindex="-1"
+     role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="max-width: 650px!important;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">خصوصیات</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal form-material needs-validation" novalidate
+                      asp-area="Admin" asp-action="AddProperty" asp-controller="Category"
+                      asp-route-CategoryId="@Model.CategoryId" data-ajax-success="Success_Ajax_Add"
+                      data-ajax-failure="Failure_Ajax" data-ajax="true" data-ajax-method="GET">
+                    <div class="form-group row">
+                        <div asp-validation-summary="ModelOnly"></div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="TitleValue" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" asp-for="TitleValue" class="form-control" placeholder="عنوان">
+                            <span asp-validation-for="TitleValue"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Type" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <select asp-for="Type"
+                                    class="form-control"
+                                    asp-items="Html.GetEnumSelectList<TypeOfInputValue>()">
+                                <option>انتخاب کنید</option>
+                            </select>
+                            <span asp-validation-for="Type"></span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-info waves-effect">ارسال</button>
+                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">انصراف</button>
+                    </div>
+                </form>
+                <div class="col-md-12" id="add-property">
+                    <h4 class="card-title m-t-15">لیست</h4>
+                    @foreach (var item in Model.ProppertyCategoryList)
+                    {
+                <button type="button" class="btn btn-primary" id="Pr@(item.Id)">
+                    <a onclick="Delete_Ajax_Property(@item.Id,'@item.TitleValue','DeleteProperty')" class="close">×</a>
+
+                    @item.TitleValue<span class="badge badge-light">
+                        @*@item.ProductCount*@
+                    </span>
+                </button>
+                    }
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+

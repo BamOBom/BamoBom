@@ -1,0 +1,66 @@
+﻿@model BomoBana.Areas.Admin.UploadCenterDto
+
+@{
+    ViewData["Title"] = "آپلود سنتر";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section Style{
+    <link href="~/Admin/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="~/Admin/assets/libs/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/Admin/assets/libs/dropzone/dist/min/dropzone.min.css">
+}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">آپلود سنتر</h4>
+                <div class="form-group row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <form class="dropzone needs-validation" novalidate enctype="multipart/form-data"
+                                      asp-area="Admin" asp-action="Create" asp-controller="Upload"
+                                      data-ajax-success="Success_Ajax_Add"
+                                      data-ajax-failure="Failure_Ajax" data-ajax="true" data-ajax-method="POST">
+                                    <div class="fallback">
+                                        <input asp-for="File" type="file" multiple />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
+    <script src="~/Admin/js/pages/datatable/datatable-advanced.init.js"></script>
+    <script src="~/Admin/js/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Admin/assets/libs/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="~/Admin/js/ToastrNotification.js"></script>
+    <script src="~/Admin/js/AjaxRequest.js"></script>
+    <script src="~/Admin/assets/libs/dropzone/dist/dropzone.js"></script>
+    <script src="~/Admin/assets/libs/block-ui/jquery.blockUI.js"></script>
+    <script>
+        function Success_Ajax_Add(data) {
+            if (data.confirm) {
+                swal("ثبت شد!", " گزینه " + data.name + " به لیست اضافه شد", "success")
+                Notification_success(data.message);
+            }
+            else {
+                Notification_info(data.message);
+                $.unblockUI({
+                    timeout: 2000, //unblock after 2 seconds
+                })
+                $('#add-Coopertion').modal('toggle');
+            }
+        }
+    </script>
+}

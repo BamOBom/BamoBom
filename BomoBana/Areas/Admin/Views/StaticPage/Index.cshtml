@@ -1,0 +1,191 @@
+﻿@model IEnumerable< BomoBana.Areas.Admin.StaticPageDto>
+@using EnumValue
+@{
+    ViewData["Title"] = "صفحات ایستا";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    int count = 0;
+}
+@section Style{
+    <link href="~/Admin/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">لیست صفحات ایستا</h4>
+                <a asp-action="Create" asp-area="Admin" asp-controller="StaticPage"
+                   class="btn btn-info btn-rounded float-left-important">
+                    ثبت صفحه ایستا جدید
+                </a>                   
+                <div class="table-responsive">
+                        <table id="file_export" class="table table-striped table-bordered display">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>عنوان</th>
+                                    <th>کپشن</th>
+                                    <th>Url</th>
+                                    <th>وضعیت</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr id="tr@(item.Id)">
+                                        <td>
+                                            @{
+                                                count = count + 1;
+                                            }
+                                            @if (item.CreateDate.AddMinutes(10) >= DateTime.Now)
+                                            {
+                                                <span class="badge badge-success">جدید</span>
+                                            }
+                                            else
+                                            {
+                                                @count
+                                            }
+                                        </td>
+                                        <td>
+                                            @item.PageTitle
+                                        </td>
+                                        <td>
+                                            @if (@item.Caption.Length > 50)
+                                            {
+                                                var Caption = item.Caption.Substring(0, 50);
+                                                @Caption <a asp-action="DetailsPage" class="block-default MoreCaption"
+                                                            asp-route-Id="@item.Id" asp-controller="StaticPage" asp-area="Admin"
+                                                            data-ajax-success="Success_Ajax" data-ajax-failure="Failure_Ajax_Page"
+                                                            data-ajax="true" data-ajax-method="Post">...</a>
+                                            }
+                                            else
+                                            {
+                                                @item.Caption <a asp-action="DetailsPage" class="block-default MoreCaption"
+                                                                 asp-route-Id="@item.Id" asp-controller="StaticPage" asp-area="Admin"
+                                                                 data-ajax-success="Success_Ajax" data-ajax-failure="Failure_Ajax_Page"
+                                                                 data-ajax="true" data-ajax-method="Post">...</a>
+                                            }
+                                        </td>
+                                        <td>
+                                            @if (ViewData["Url"] != null && ViewData["BaseUrl"] != null)
+                                            {
+                                                <a href="@ViewData["BaseUrl"]/@item.Url">@ViewData["Url"]/@item.Url</a>
+                                            }
+                                            else
+                                            {
+                                                @item.Url
+                                            }
+
+                                        </td>
+                                        <td>
+                                            <div id="MsgIsActive">
+                                                <a href="javascript:void(0)" onclick="Update_Ajax(@item.Id,'@item.PageTitle','StaticPage/UpdateActiveStaticPage')" class="border-none"
+                                                   data-toggle="tooltip" data-original-title="فعال">
+                                                    <div id="IsActiveStatus@(item.Id)">
+                                                        @if (!item.IsActive)
+                                                        {
+                                                            <span class="label label-danger custom-label-acrive font-14 font-weight-100">
+                                                                غیرفعال
+                                                                <i class="fa fa-times" aria-hidden="true"></i>
+                                                            </span>
+                                                        }
+                                                        else
+                                                        {
+                                                            <span class="label label-success custom-label-acrive font-14 font-weight-100">
+                                                                فعال
+                                                                <i class="ti-check text-active" aria-hidden="true"></i>
+                                                            </span>
+                                                        }
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            @if (item.StaticPageType != StaticPageType.About || item.StaticPageType != StaticPageType.Contact
+                                            || item.StaticPageType != StaticPageType.Coopretion)
+                                            {
+                                                <button type="button" onclick="Delete_Ajax(@item.Id,'@item.PageTitle','StaticPage/DeleteStaticPage')" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn"
+                                                        data-toggle="tooltip" data-original-title="حذف">
+                                                    <i class="ti-close" aria-hidden="true"></i>
+                                                </button>
+                                            }
+                                            <a asp-action="Edit" asp-route-Id="@item.Id" 
+                                               asp-controller="StaticPage" asp-area="Admin" class="text-inverse" title="ویرایش" 
+                                               data-toggle="tooltip" data-original-title="ویرایش">
+                                              <i class="ti-pencil text-dark"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>#</th>
+                                    <th>عنوان</th>
+                                    <th>کپشن</th>
+                                    <th>Url</th>
+                                    <th>وضعیت</th>
+                                    <th></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div id="PageLoad"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
+    <script src="~/Admin/js/pages/datatable/datatable-advanced.init.js"></script>
+    <script src="~/Admin/js/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Admin/assets/libs/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="~/Admin/js/ToastrNotification.js"></script>
+    <script src="~/Admin/js/AjaxRequest.js"></script>
+    <script src="~/Admin/assets/libs/block-ui/jquery.blockUI.js"></script>
+    <script>
+        $('.block-default').on('click', function () {
+            $.blockUI({
+                message: '<i class="fas fa-spin fa-sync text-white"></i>',
+                overlayCSS: {
+                    backgroundColor: '#000',
+                    opacity: 0.5,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        });
+        function Success_Ajax(data) {
+            if (data.items == false) {
+                $.unblockUI({
+                    timeout: 2000, //unblock after 2 seconds
+                })
+                Notification_error(data.message);
+            }
+            else {
+                $("#PageLoad").empty();
+                $("#PageLoad").append(data);
+                $("#DetailPageLoad").modal("show");
+                $(data).fadeIn();
+                $.unblockUI({
+                    timeout: 2000, //unblock after 2 seconds
+                })
+            }
+        }
+        function Failure_Ajax_Page() {
+            Notification_error('عملیات با خطا روبرو شد');
+            $.unblockUI({
+                timeout: 2000, //unblock after 2 seconds
+            })
+        };
+    </script>
+}
+

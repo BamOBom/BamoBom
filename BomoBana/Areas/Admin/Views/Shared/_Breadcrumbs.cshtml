@@ -1,0 +1,13 @@
+﻿@using WebFramework.Services;
+@inject BreadcrumbService  BreadcrumbService
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">داشبورد</li>
+
+        @foreach (var breadcrumb in BreadcrumbService.GetBreadcrumbs())
+        {
+            <li class="breadcrumb-item">
+                <a asp-area="@breadcrumb.Area" asp-controller="@breadcrumb.Controller" asp-action="@breadcrumb.Action"
+                   asp-route-id="@breadcrumb.Id">@breadcrumb.Title</a>
+            </li>
+        }
+    </ol>

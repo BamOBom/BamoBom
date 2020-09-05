@@ -1,0 +1,143 @@
+﻿@model BomoBana.Areas.Admin.AddBlogDto
+@{
+    ViewData["Title"] = "ایجاد مطلب جدید";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <form class="form-horizontal striped-rows b-form needs-validation" novalidate enctype="multipart/form-data"
+                  asp-action="Create" asp-controller="Blog" asp-area="Admin">
+                <div class="card-body">
+                    <h4 class="card-title">مطلب جدید</h4>
+                    <div class="form-group row">
+                        <div asp-validation-summary="ModelOnly"></div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Title" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" asp-for="Title" class="form-control" placeholder="عنوان">
+                            <span asp-validation-for="Title"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Caption" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea type="text" style="height:150px" asp-for="Caption" class="form-control"></textarea>
+                            <span asp-validation-for="Caption"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Content" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea type="text" asp-for="Content" style="height:150px" class="form-control"></textarea>
+                            <span asp-validation-for="Content"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Image" class="control-label col-form-label">انتخاب عکس</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Upload</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" accept="image/x-jpg" asp-for="Image" class="custom-file-input">
+                                    <label class="custom-file-label" asp-for="Image">انتخاب عکس</label>
+                                </div>
+                            </div>
+                            <small id="textHelp" class="form-text text-muted">فرمت عکس باید png باشد</small>
+                            <span asp-validation-for="Image"></span>
+                            <div class="col-sm-2" id="image-holder">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="IsActive" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" checked asp-for="IsActive" type="checkbox">
+                                <label class="form-check-label" asp-for="IsActive">  فعال / غیرفعال  </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="SetSliderHome" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" checked asp-for="SetSliderHome" type="checkbox">
+                                <label class="form-check-label" asp-for="SetSliderHome"> نمایش / عدم نمایش  </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Keywords" class="control-label col-form-label">کلمات کلیدی</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" asp-for="Keywords" class="form-control" placeholder="">
+                            <span asp-validation-for="Keywords"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="DescriptionSeo" class="control-label col-form-label">توضیحات برای موتور جستجو</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea type="text" asp-for="DescriptionSeo" style="height:150px" class="form-control" placeholder=""></textarea>
+                            <span asp-validation-for="DescriptionSeo"></span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="card-body">
+                    <div class="form-group m-b-0 text-right">
+                        <button type="submit" class="btn btn-info waves-effect waves-light">ذخیره</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/Admin/js/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Admin/js/ToastrNotification.js"></script>
+    <script src="~/Admin/js/AjaxRequest.js"></script>
+    <script src="https://cdn.ckeditor.com/4.9.0/full-all/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('Content', {
+            language: 'fa',
+            contentsLangDirection: 'rtl'
+
+        });
+    </script>
+}

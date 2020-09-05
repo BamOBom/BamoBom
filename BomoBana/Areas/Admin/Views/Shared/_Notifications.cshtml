@@ -1,0 +1,80 @@
+﻿@using EnumValue
+@{
+    //success messages
+    var successMessages = new List<string>();
+    if (TempData[string.Format("rata.notifications.{0}", NotifyType.Success)] != null)
+    {
+        successMessages.AddRange(TempData[string.Format("rata.notifications.{0}", NotifyType.Success)] as IList<string>);
+    }
+    if (ViewData[string.Format("rata.notifications.{0}", NotifyType.Success)] != null)
+    {
+        successMessages.AddRange(ViewData[string.Format("rata.notifications.{0}", NotifyType.Success)] as IList<string>);
+    }
+
+
+
+    //error messages
+    var errorMessages = new List<string>();
+    if (TempData[string.Format("rata.notifications.{0}", NotifyType.Error)] != null)
+    {
+        errorMessages.AddRange(TempData[string.Format("rata.notifications.{0}", NotifyType.Error)] as IList<string>);
+    }
+    if (ViewData[string.Format("rata.notifications.{0}", NotifyType.Error)] != null)
+    {
+        errorMessages.AddRange(ViewData[string.Format("rata.notifications.{0}", NotifyType.Error)] as IList<string>);
+    }
+
+    var warningMessages = new List<string>();
+    if (TempData[string.Format("rata.notifications.{0}", NotifyType.Warning)] != null)
+    {
+        warningMessages.AddRange(TempData[string.Format("rata.notifications.{0}", NotifyType.Warning)] as IList<string>);
+    }
+    if (ViewData[string.Format("rata.notifications.{0}", NotifyType.Warning)] != null)
+    {
+        warningMessages.AddRange(ViewData[string.Format("rata.notifications.{0}", NotifyType.Warning)] as IList<string>);
+    }
+
+    var infoMessages = new List<string>();
+    if (TempData[string.Format("rata.notifications.{0}", NotifyType.Info)] != null)
+    {
+        infoMessages.AddRange(TempData[string.Format("rata.notifications.{0}", NotifyType.Info)] as IList<string>);
+    }
+    if (ViewData[string.Format("rata.notifications.{0}", NotifyType.Info)] != null)
+    {
+        infoMessages.AddRange(ViewData[string.Format("rata.notifications.{0}", NotifyType.Info)] as IList<string>);
+    }
+}
+
+@foreach (var message in successMessages)
+{
+
+    <script>
+        Notification_success('@message');
+        @*toastr.success('@message', 'انجام شد', { "progressBar": true ,"closeButton": true,"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000 });*@
+    </script>
+}
+
+@foreach (var message in errorMessages)
+{
+    <script>
+        Notification_error('@message');
+        @*toastr.error('@message', 'خطا', { "progressBar": true ,"closeButton": true,"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000});*@
+    </script>
+}
+
+@foreach (var message in warningMessages)
+{
+    <script>
+        Notification_warning('@message');
+        @*toastr.warning('@message', 'هشدار', { "progressBar": true ,"closeButton": true,"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000 });*@
+    </script>
+}
+
+@foreach (var message in infoMessages)
+{
+    <script>
+        Notification_info('@message');
+        @*toastr.info('@message', 'اعلان', { "progressBar": true ,"closeButton": true,"showMethod": "slideDown", "hideMethod": "slideUp", timeOut: 2000 });*@
+    </script>
+}
+
