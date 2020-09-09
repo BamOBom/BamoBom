@@ -1,0 +1,155 @@
+2020-09-09 00:59:11.9711 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 00:59:28.4051 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/assets/js/jquery.min.js | action: 
+2020-09-09 00:59:28.4051 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/scripts.js | action: 
+2020-09-09 00:59:28.4051 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/runtime.js | action: 
+2020-09-09 00:59:28.4051 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/polyfills.js | action: 
+2020-09-09 00:59:28.4051 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/styles.js | action: 
+2020-09-09 00:59:28.4051 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/vendor.js | action: 
+2020-09-09 00:59:28.6281 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/main.js | action: 
+2020-09-09 01:03:19.8403 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/vendor.js | action: 
+2020-09-09 01:03:19.8403 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/runtime.js | action: 
+2020-09-09 01:03:19.9083 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/styles.js | action: 
+2020-09-09 01:03:19.8753 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/assets/js/jquery.min.js | action: 
+2020-09-09 01:03:19.9803 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/scripts.js | action: 
+2020-09-09 01:03:19.9803 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/polyfills.js | action: 
+2020-09-09 01:03:30.2639 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/main.js | action: 
+2020-09-09 01:27:57.8499 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/runtime.js | action: 
+2020-09-09 01:27:57.8909 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/scripts.js | action: 
+2020-09-09 01:27:57.9829 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/styles.js | action: 
+2020-09-09 01:27:57.9279 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-09 01:27:57.9829 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-09 01:27:58.0699 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/polyfills.js | action: 
+2020-09-09 01:28:08.2434 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
+2020-09-09 01:29:37.4775 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/scripts.js | action: 
+2020-09-09 01:29:37.4775 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/runtime.js | action: 
+2020-09-09 01:29:37.4775 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/polyfills.js | action: 
+2020-09-09 01:29:37.5256 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-09 01:29:37.5256 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/styles.js | action: 
+2020-09-09 01:29:37.5736 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-09 01:29:37.8156 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
+2020-09-09 01:30:07.5083 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-09 01:30:07.6063 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-09 01:30:07.6063 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/scripts.js | action: 
+2020-09-09 01:30:07.6063 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/polyfills.js | action: 
+2020-09-09 01:30:07.7753 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/runtime.js | action: 
+2020-09-09 01:30:07.8653 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/styles.js | action: 
+2020-09-09 01:30:07.9083 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
+2020-09-09 02:40:02.7082 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 02:40:43.1715 | ERROR | Option "port" was already specified with value 4200. The new value 8932 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 02:42:34.2159 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/runtime.js | action: 
+2020-09-09 02:42:34.1709 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/assets/js/jquery.min.js | action: 
+2020-09-09 02:42:34.2149 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/vendor.js | action: 
+2020-09-09 02:42:34.1709 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/scripts.js | action: 
+2020-09-09 02:42:34.1709 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/polyfills.js | action: 
+2020-09-09 02:42:34.1709 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/styles.js | action: 
+2020-09-09 02:42:34.2509 | ERROR | An unhandled exception has occurred while executing the request. | System.TimeoutException: The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/vendor.js | action: 
+2020-09-09 02:42:34.2509 | ERROR | An unhandled exception has occurred while executing the request. | System.TimeoutException: The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/polyfills.js | action: 
+2020-09-09 02:42:34.2509 | ERROR | An unhandled exception has occurred while executing the request. | System.TimeoutException: The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/runtime.js | action: 
+2020-09-09 02:42:34.2509 | ERROR | An unhandled exception has occurred while executing the request. | System.TimeoutException: The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/styles.js | action: 
+2020-09-09 02:42:34.2509 | ERROR | An unhandled exception has occurred while executing the request. | System.TimeoutException: The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/scripts.js | action: 
+2020-09-09 02:42:34.2509 | ERROR | An unhandled exception has occurred while executing the request. | System.TimeoutException: The Angular CLI process did not start listening for requests within the timeout period of 0 seconds. Check the log output for error information.
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/assets/js/jquery.min.js | action: 
+2020-09-09 10:44:20.2859 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 10:44:47.0085 | ERROR | Option "port" was already specified with value 4200. The new value 2769 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 10:46:21.3069 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 10:46:28.4173 | ERROR | Option "port" was already specified with value 4200. The new value 2827 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 10:49:41.0063 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 10:49:49.0007 | ERROR | Option "port" was already specified with value 4200. The new value 2918 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 10:56:35.8540 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 10:57:05.5277 | ERROR | Option "port" was already specified with value 4200. The new value 3067 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 11:16:36.4327 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 11:18:09.9580 | ERROR | Option "port" was already specified with value 4200. The new value 3663 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 11:28:14.9216 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 11:28:30.6145 | ERROR | Option "port" was already specified with value 4200. The new value 3983 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 11:46:00.9318 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 11:46:24.8671 | ERROR | Option "port" was already specified with value 4200. The new value 1584 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 11:51:56.3871 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 11:52:02.8885 | ERROR | Option "port" was already specified with value 4200. The new value 1845 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 11:57:47.1712 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 11:58:07.4323 | ERROR | Option "port" was already specified with value 4200. The new value 2243 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 12:00:39.0300 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 12:00:45.8784 | ERROR | Option "port" was already specified with value 4200. The new value 2396 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 12:31:15.6437 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 12:31:59.9272 | ERROR | Option "port" was already specified with value 4200. The new value 1685 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 14:28:36.9534 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 14:29:09.2403 | ERROR | Option "port" was already specified with value 4200. The new value 6668 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 14:43:17.8318 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 14:50:37.9810 | ERROR | Option "port" was already specified with value 4200. The new value 7623 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 14:53:48.7989 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-09 14:54:14.7944 | ERROR | Option "port" was already specified with value 4200. The new value 7752 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-09 15:03:11.0320 | ERROR | Option "port" was already specified with value 4200. The new value 8146 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 

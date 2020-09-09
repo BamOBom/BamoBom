@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\BomoBana\\BomoBana\\BomoBana\\BomoBana.csproj": {}
+    "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\BomoBana\\BomoBana.csproj": {}
   },
   "projects": {
-    "D:\\Project\\BomoBana\\BomoBana\\BomoBana\\BomoBana.csproj": {
+    "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\BomoBana\\BomoBana.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\BomoBana\\BomoBana\\BomoBana\\BomoBana.csproj",
+        "projectUniqueName": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\BomoBana\\BomoBana.csproj",
         "projectName": "BomoBana",
-        "projectPath": "D:\\Project\\BomoBana\\BomoBana\\BomoBana\\BomoBana.csproj",
-        "packagesPath": "C:\\Users\\emertat\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\BomoBana\\BomoBana\\BomoBana\\obj\\",
+        "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\BomoBana\\BomoBana.csproj",
+        "packagesPath": "C:\\Users\\illiya.ir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\BomoBana\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\emertat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\illiya.ir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Project\\BomoBana\\BomoBana\\WebFramework\\WebFramework.csproj": {
-                "projectPath": "D:\\Project\\BomoBana\\BomoBana\\WebFramework\\WebFramework.csproj"
+              "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\WebFramework\\WebFramework.csproj": {
+                "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\WebFramework\\WebFramework.csproj"
               }
             }
           }
@@ -117,6 +114,10 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.5, )"
@@ -192,24 +193,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project\\BomoBana\\BomoBana\\Common\\Common.csproj": {
+    "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\BomoBana\\BomoBana\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "D:\\Project\\BomoBana\\BomoBana\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\emertat\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\BomoBana\\BomoBana\\Common\\obj\\",
+        "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\illiya.ir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\emertat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\illiya.ir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -269,24 +267,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project\\BomoBana\\BomoBana\\Data\\Data.csproj": {
+    "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\BomoBana\\BomoBana\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "D:\\Project\\BomoBana\\BomoBana\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\emertat\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\BomoBana\\BomoBana\\Data\\obj\\",
+        "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\illiya.ir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\emertat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\illiya.ir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -299,8 +294,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Project\\BomoBana\\BomoBana\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\Project\\BomoBana\\BomoBana\\Entities\\Entities.csproj"
+              "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Entities\\Entities.csproj"
               }
             }
           }
@@ -340,24 +335,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project\\BomoBana\\BomoBana\\Entities\\Entities.csproj": {
+    "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\BomoBana\\BomoBana\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "D:\\Project\\BomoBana\\BomoBana\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\emertat\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\BomoBana\\BomoBana\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\illiya.ir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\emertat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\illiya.ir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -370,8 +362,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Project\\BomoBana\\BomoBana\\Common\\Common.csproj": {
-                "projectPath": "D:\\Project\\BomoBana\\BomoBana\\Common\\Common.csproj"
+              "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Common\\Common.csproj"
               }
             }
           }
@@ -405,24 +397,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project\\BomoBana\\BomoBana\\Services\\Services.csproj": {
+    "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\BomoBana\\BomoBana\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "D:\\Project\\BomoBana\\BomoBana\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\emertat\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\BomoBana\\BomoBana\\Services\\obj\\",
+        "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\illiya.ir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Services\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\emertat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\illiya.ir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -435,8 +424,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Project\\BomoBana\\BomoBana\\Data\\Data.csproj": {
-                "projectPath": "D:\\Project\\BomoBana\\BomoBana\\Data\\Data.csproj"
+              "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Data\\Data.csproj"
               }
             }
           }
@@ -478,24 +467,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project\\BomoBana\\BomoBana\\WebFramework\\WebFramework.csproj": {
+    "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\WebFramework\\WebFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\BomoBana\\BomoBana\\WebFramework\\WebFramework.csproj",
+        "projectUniqueName": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\WebFramework\\WebFramework.csproj",
         "projectName": "WebFramework",
-        "projectPath": "D:\\Project\\BomoBana\\BomoBana\\WebFramework\\WebFramework.csproj",
-        "packagesPath": "C:\\Users\\emertat\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\BomoBana\\BomoBana\\WebFramework\\obj\\",
+        "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\WebFramework\\WebFramework.csproj",
+        "packagesPath": "C:\\Users\\illiya.ir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\WebFramework\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\emertat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\illiya.ir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -508,8 +494,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Project\\BomoBana\\BomoBana\\Services\\Services.csproj": {
-                "projectPath": "D:\\Project\\BomoBana\\BomoBana\\Services\\Services.csproj"
+              "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Services\\Services.csproj"
               }
             }
           }
@@ -620,7 +606,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

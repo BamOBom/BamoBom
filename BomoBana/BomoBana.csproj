@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <NoWin32Manifest>true</NoWin32Manifest>
+    <SpaRoot>angular\</SpaRoot>
     <Nullable>enable</Nullable>
     <LangVersion>8.0</LangVersion>
   </PropertyGroup>
@@ -14,6 +15,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.ResponseCompression" Version="2.2.0" />
 
     <PackageReference Include="Microsoft.AspNetCore.Rewrite" Version="2.2.0" />
@@ -22,6 +27,7 @@
     <PackageReference Include="ExcelDataReader" Version="3.6.0" />
     <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
    
     <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="3.1.5">
@@ -142,6 +148,7 @@
     <None Include="Areas\Admin\Views\User\Index.cshtml" />
     <None Include="Areas\Admin\Views\_ViewImports.cshtml" />
     <None Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <None Include="Views\_ViewStart.cshtml" />
     <None Include="wwwroot\Admin\assets\extra-libs\block-ui\block-ui.js" />
     <None Include="wwwroot\Admin\assets\extra-libs\c3\c3.min.js" />
     <None Include="wwwroot\Admin\assets\extra-libs\c3\d3.min.js" />

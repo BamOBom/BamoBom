@@ -1,0 +1,226 @@
+2020-09-08 22:01:15.0291 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-08 23:32:37.2408 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-08 23:32:51.8197 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/ | action: Index
+2020-09-08 23:32:51.8197 | ERROR | An unhandled exception has occurred while executing the request. | System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\illiya.ir\Documents\GitHub\BamoBom\BomoBana\~\angular\dist\angular-starter\Index.html'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at AspNetCore.Views__ViewStart.ExecuteAsync() in C:\Users\illiya.ir\Documents\GitHub\BamoBom\BomoBana\Views\_ViewStart.cshtml:line 5
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderViewStartsAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/ | action: Index
+2020-09-08 23:33:52.8902 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-08 23:34:05.5089 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/ | action: Index
+2020-09-08 23:34:05.5139 | ERROR | An unhandled exception has occurred while executing the request. | System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\angular\dist\angular-starter\Index.html'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at AspNetCore.Views__ViewStart.ExecuteAsync() in C:\Users\illiya.ir\Documents\GitHub\BamoBom\BomoBana\Views\_ViewStart.cshtml:line 5
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderViewStartsAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/ | action: Index
+2020-09-08 23:34:48.1513 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-08 23:35:00.5590 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/polyfills.js | action: 
+2020-09-08 23:35:00.5590 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/vendor.js | action: 
+2020-09-08 23:35:00.5600 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/scripts.js | action: 
+2020-09-08 23:35:00.5590 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/styles.js | action: 
+2020-09-08 23:35:00.5590 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/runtime.js | action: 
+2020-09-08 23:35:00.5590 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/assets/js/jquery.min.js | action: 
+2020-09-08 23:35:00.6300 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/main.js | action: 
+2020-09-08 23:35:16.0559 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/styles.js | action: 
+2020-09-08 23:35:16.0559 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/runtime.js | action: 
+2020-09-08 23:35:16.0559 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/vendor.js | action: 
+2020-09-08 23:35:16.0559 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/polyfills.js | action: 
+2020-09-08 23:35:16.0559 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/assets/js/jquery.min.js | action: 
+2020-09-08 23:35:16.0559 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/scripts.js | action: 
+2020-09-08 23:35:16.1059 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/main.js | action: 
+2020-09-08 23:37:14.9717 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/polyfills.js | action: 
+2020-09-08 23:37:14.9717 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/styles.js | action: 
+2020-09-08 23:37:14.9737 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/vendor.js | action: 
+2020-09-08 23:37:14.9737 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/scripts.js | action: 
+2020-09-08 23:37:14.9737 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/assets/js/jquery.min.js | action: 
+2020-09-08 23:37:14.9737 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/runtime.js | action: 
+2020-09-08 23:37:15.0707 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/main.js | action: 
+2020-09-08 23:37:28.9845 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/styles.js | action: 
+2020-09-08 23:37:28.9975 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/scripts.js | action: 
+2020-09-08 23:37:28.9975 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/runtime.js | action: 
+2020-09-08 23:37:29.0145 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/polyfills.js | action: 
+2020-09-08 23:37:29.0145 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/assets/js/jquery.min.js | action: 
+2020-09-08 23:37:29.0315 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/main.js | action: 
+2020-09-08 23:37:29.0315 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/vendor.js | action: 
+2020-09-08 23:37:31.8537 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/runtime.js | action: 
+2020-09-08 23:37:31.8537 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/vendor.js | action: 
+2020-09-08 23:37:31.8537 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/assets/js/jquery.min.js | action: 
+2020-09-08 23:37:31.8537 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/styles.js | action: 
+2020-09-08 23:37:31.8727 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/polyfills.js | action: 
+2020-09-08 23:37:31.8727 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/scripts.js | action: 
+2020-09-08 23:37:31.8907 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/main.js | action: 
+2020-09-08 23:37:59.6123 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/styles.js | action: 
+2020-09-08 23:37:59.6123 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/vendor.js | action: 
+2020-09-08 23:37:59.6123 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/assets/js/jquery.min.js | action: 
+2020-09-08 23:37:59.6123 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/runtime.js | action: 
+2020-09-08 23:37:59.6123 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/polyfills.js | action: 
+2020-09-08 23:37:59.6123 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/scripts.js | action: 
+2020-09-08 23:37:59.6633 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/main.js | action: 
+2020-09-08 23:38:36.6584 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/polyfills.js | action: 
+2020-09-08 23:38:36.6584 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/styles.js | action: 
+2020-09-08 23:38:36.6584 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/assets/js/jquery.min.js | action: 
+2020-09-08 23:38:36.6584 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/scripts.js | action: 
+2020-09-08 23:38:36.6584 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/vendor.js | action: 
+2020-09-08 23:38:36.6704 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/runtime.js | action: 
+2020-09-08 23:38:36.6934 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/main.js | action: 
+2020-09-08 23:38:51.1132 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/runtime.js | action: 
+2020-09-08 23:38:51.1132 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/assets/js/jquery.min.js | action: 
+2020-09-08 23:38:51.1132 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/polyfills.js | action: 
+2020-09-08 23:38:51.1132 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/vendor.js | action: 
+2020-09-08 23:38:51.1132 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/scripts.js | action: 
+2020-09-08 23:38:51.1162 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/styles.js | action: 
+2020-09-08 23:39:01.2148 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/main.js | action: 
+2020-09-08 23:39:39.3460 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:39:39.3460 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular-starter/runtime.js | action: 
+2020-09-08 23:39:39.3460 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular-starter/scripts.js | action: 
+2020-09-08 23:39:39.3460 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular-starter/polyfills.js | action: 
+2020-09-08 23:39:39.3460 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular-starter/vendor.js | action: 
+2020-09-08 23:39:39.3460 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular-starter/styles.js | action: 
+2020-09-08 23:39:39.4200 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular-starter/main.js | action: 
+2020-09-08 23:41:19.3517 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular-starter/styles.js | action: 
+2020-09-08 23:41:19.3517 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:41:19.3517 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular-starter/polyfills.js | action: 
+2020-09-08 23:41:19.3517 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular-starter/vendor.js | action: 
+2020-09-08 23:41:19.3517 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular-starter/scripts.js | action: 
+2020-09-08 23:41:19.3517 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/runtime.js | action: 
+2020-09-08 23:41:19.3957 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular-starter/main.js | action: 
+2020-09-08 23:42:30.0557 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-08 23:42:30.0557 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/styles.js | action: 
+2020-09-08 23:42:30.0557 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/runtime.js | action: 
+2020-09-08 23:42:30.0557 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/polyfills.js | action: 
+2020-09-08 23:42:30.0557 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/scripts.js | action: 
+2020-09-08 23:42:32.0909 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:42:32.0919 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
+2020-09-08 23:43:38.3676 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/polyfills.js | action: 
+2020-09-08 23:43:38.3676 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:43:38.3676 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/styles.js | action: 
+2020-09-08 23:43:38.3676 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/runtime.js | action: 
+2020-09-08 23:43:38.4007 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
+2020-09-08 23:43:38.4077 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/scripts.js | action: 
+2020-09-08 23:43:38.4077 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-08 23:43:38.4647 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/polyfills.js | action: 
+2020-09-08 23:43:38.4697 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:43:38.4697 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/styles.js | action: 
+2020-09-08 23:44:19.7000 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/polyfills.js | action: 
+2020-09-08 23:44:19.7010 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/runtime.js | action: 
+2020-09-08 23:44:19.7010 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/scripts.js | action: 
+2020-09-08 23:44:19.7010 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/styles.js | action: 
+2020-09-08 23:44:19.7010 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
+2020-09-08 23:44:19.7010 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-08 23:44:19.7280 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:44:19.7380 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/polyfills.js | action: 
+2020-09-08 23:44:19.7860 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/styles.js | action: 
+2020-09-08 23:44:19.8080 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/scripts.js | action: 
+2020-09-08 23:44:19.8280 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-08 23:44:19.8650 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
+2020-09-08 23:44:19.9270 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:44:24.0103 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/polyfills.js | action: 
+2020-09-08 23:44:24.0243 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-08 23:44:24.0243 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
+2020-09-08 23:44:24.0243 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:44:24.0243 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/styles.js | action: 
+2020-09-08 23:44:24.0383 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/scripts.js | action: 
+2020-09-08 23:44:24.0543 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/runtime.js | action: 
+2020-09-08 23:44:24.0853 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/polyfills.js | action: 
+2020-09-08 23:44:24.0853 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/styles.js | action: 
+2020-09-08 23:44:24.1213 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/scripts.js | action: 
+2020-09-08 23:44:24.1473 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-08 23:44:24.1473 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
+2020-09-08 23:44:24.1893 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:45:02.5925 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/~/angular/dist/angular-starter/runtime.js | action: 
+2020-09-08 23:45:02.5925 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/scripts.js | action: 
+2020-09-08 23:45:02.5925 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-08 23:45:02.5925 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/polyfills.js | action: 
+2020-09-08 23:45:02.5925 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/styles.js | action: 
+2020-09-08 23:45:02.5925 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:45:02.6415 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
+2020-09-08 23:45:27.6719 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/polyfills.js | action: 
+2020-09-08 23:45:27.6719 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/scripts.js | action: 
+2020-09-08 23:45:27.6719 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:45:27.6719 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-08 23:45:27.6719 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/runtime.js | action: 
+2020-09-08 23:45:27.6719 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/styles.js | action: 
+2020-09-08 23:45:37.8185 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
+2020-09-08 23:45:40.6536 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/styles.js | action: 
+2020-09-08 23:45:40.6536 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-08 23:45:40.6536 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/scripts.js | action: 
+2020-09-08 23:45:40.6656 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:45:40.6656 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/runtime.js | action: 
+2020-09-08 23:45:40.6656 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/polyfills.js | action: 
+2020-09-08 23:45:40.6936 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
+2020-09-08 23:45:54.0914 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/styles.js | action: 
+2020-09-08 23:45:54.0914 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/scripts.js | action: 
+2020-09-08 23:45:54.0914 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:45:54.0914 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/polyfills.js | action: 
+2020-09-08 23:45:54.0914 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-08 23:45:54.0914 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/runtime.js | action: 
+2020-09-08 23:46:04.1960 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
+2020-09-08 23:47:12.5659 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/runtime.js | action: 
+2020-09-08 23:47:12.5659 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/vendor.js | action: 
+2020-09-08 23:47:12.5659 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/styles.js | action: 
+2020-09-08 23:47:12.5659 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/assets/js/jquery.min.js | action: 
+2020-09-08 23:47:12.5659 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/scripts.js | action: 
+2020-09-08 23:47:12.5659 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/polyfills.js | action: 
+2020-09-08 23:47:12.6089 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/angular/dist/angular-starter/main.js | action: 
