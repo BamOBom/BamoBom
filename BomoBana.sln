@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BomoBana", "BomoBana\BomoBana.csproj", "{391208F0-FDDC-46C9-B65B-1F471AEEEB57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BomoBana", "BomoBana\BomoBana.csproj", "{391208F0-FDDC-46C9-B65B-1F471AEEEB57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{2AEB12BA-E1B1-4D42-8DAA-492FC68DF145}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{2AEB12BA-E1B1-4D42-8DAA-492FC68DF145}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{E0417A1D-E228-4203-9101-471AB43899C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{E0417A1D-E228-4203-9101-471AB43899C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{F4DCFCFC-6E68-4DFD-9FAC-0B334CBB5594}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{F4DCFCFC-6E68-4DFD-9FAC-0B334CBB5594}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{F4759D59-4C1B-4035-91B3-05B654BD3C8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{F4759D59-4C1B-4035-91B3-05B654BD3C8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFramework", "WebFramework\WebFramework.csproj", "{09E117DF-F345-4901-84FA-4EA1CA52ED8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebFramework", "WebFramework\WebFramework.csproj", "{09E117DF-F345-4901-84FA-4EA1CA52ED8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{52E77999-C80D-4373-B07F-40FFA5271DBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{52E77999-C80D-4373-B07F-40FFA5271DBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

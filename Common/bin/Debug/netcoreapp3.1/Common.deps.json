@@ -1003,7 +1003,7 @@
         "runtime": {
           "Microsoft.AspNetCore.Http.Abstractions.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.320.12812"
+            "fileVersion": "3.100.320.12011"
           }
         }
       },
@@ -1011,7 +1011,7 @@
         "runtime": {
           "Microsoft.AspNetCore.Mvc.Abstractions.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.320.12812"
+            "fileVersion": "3.100.320.12011"
           }
         }
       },
@@ -1019,7 +1019,7 @@
         "runtime": {
           "Microsoft.AspNetCore.Mvc.Core.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.320.12812"
+            "fileVersion": "3.100.320.12011"
           }
         }
       },
@@ -1027,7 +1027,7 @@
         "runtime": {
           "Microsoft.AspNetCore.Routing.Abstractions.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.320.12812"
+            "fileVersion": "3.100.320.12011"
           }
         }
       },
@@ -1035,7 +1035,7 @@
         "runtime": {
           "Microsoft.Net.Http.Headers.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.320.12812"
+            "fileVersion": "3.100.320.12011"
           }
         }
       },
@@ -1043,7 +1043,7 @@
         "runtime": {
           "Microsoft.AspNetCore.Http.Extensions.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.320.12812"
+            "fileVersion": "3.100.320.12011"
           }
         }
       },
@@ -1051,7 +1051,7 @@
         "runtime": {
           "Microsoft.AspNetCore.Routing.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.320.12812"
+            "fileVersion": "3.100.320.12011"
           }
         }
       },
@@ -1059,7 +1059,7 @@
         "runtime": {
           "Microsoft.AspNetCore.Authentication.Abstractions.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.320.12812"
+            "fileVersion": "3.100.320.12011"
           }
         }
       },
@@ -1067,7 +1067,7 @@
         "runtime": {
           "Microsoft.AspNetCore.Http.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.320.12812"
+            "fileVersion": "3.100.320.12011"
           }
         }
       },
@@ -1083,7 +1083,7 @@
         "runtime": {
           "Microsoft.AspNetCore.Hosting.Abstractions.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.320.12812"
+            "fileVersion": "3.100.320.12011"
           }
         }
       },
@@ -1091,7 +1091,7 @@
         "runtime": {
           "Microsoft.AspNetCore.Authorization.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.320.12812"
+            "fileVersion": "3.100.320.12011"
           }
         }
       },
@@ -1099,7 +1099,7 @@
         "runtime": {
           "Microsoft.AspNetCore.Metadata.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.320.12812"
+            "fileVersion": "3.100.320.12011"
           }
         }
       },
@@ -1115,7 +1115,7 @@
         "runtime": {
           "Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {
             "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.320.12812"
+            "fileVersion": "3.100.320.12011"
           }
         }
       },

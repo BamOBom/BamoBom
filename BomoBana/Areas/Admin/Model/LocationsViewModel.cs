@@ -134,4 +134,27 @@ namespace BomoBana.Areas.Admin
     }
     #endregion
 
+    #region LoadAjax
+    public class LoadAjaxProvinceDto : BaseDto<LoadAjaxProvinceDto, Province, int>
+    {
+        public string text { get; set; }
+        public override void CustomMappings(IMappingExpression<Province, LoadAjaxProvinceDto> mappingExpression)
+        {
+            mappingExpression.ForMember(
+                    dest => dest.text,
+                    config => config.MapFrom(src => src.Name));
+        }
+    }
+    public class LoadAjaxCityDto : BaseDto<LoadAjaxCityDto, City, int>
+    {
+        public string text { get; set; }
+        public override void CustomMappings(IMappingExpression<City, LoadAjaxCityDto> mappingExpression)
+        {
+            mappingExpression.ForMember(
+                    dest => dest.text,
+                    config => config.MapFrom(src => src.Name));
+        }
+    }
+    #endregion
+
 }

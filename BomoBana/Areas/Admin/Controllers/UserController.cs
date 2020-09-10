@@ -13,6 +13,13 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using EnumValue;
+using AutoMapper;
+using Microsoft.AspNetCore.Hosting;
+using Common;
+using System.IO;
+using Common.Utilities;
+using System;
+using WebFramework.Services;
 
 namespace BomoBana.Area.Admin
 {
@@ -26,10 +33,12 @@ namespace BomoBana.Area.Admin
         private readonly RoleManager<Role> roleManager;
         private readonly SignInManager<User> signInManager;
         private readonly IRepository<City> _CityService;
-
+        private readonly IMapper _mapper;
+        private readonly IWebHostEnvironment webHostEnvironment;
         public UserController(IUserRepository userRepository, IJwtService jwtService,
            UserManager<User> userManager, RoleManager<Role> roleManager, SignInManager<User> signInManager,
-           IRepository<City> CityService)
+           IRepository<City> CityService, IMapper mapper,
+            IWebHostEnvironment hostEnvironment)
         {
             this.userRepository = userRepository;
             this.jwtService = jwtService;
@@ -37,6 +46,8 @@ namespace BomoBana.Area.Admin
             this.roleManager = roleManager;
             this.signInManager = signInManager;
             this._CityService = CityService;
+            _mapper = mapper;
+            webHostEnvironment = hostEnvironment;
         }
 
         #region Index
@@ -63,7 +74,7 @@ namespace BomoBana.Area.Admin
                     switch (DisplayUserInLocations)
                     {
                         case DisplayUserInLocations.City:
-                            var userCity = await userRepository.TableNoTracking.Where(e=>e.CityId == LocationId).ToListAsync(cancellationToken);
+                            var userCity = await userRepository.TableNoTracking.Where(e => e.CityId == LocationId).ToListAsync(cancellationToken);
                             if (userCity != null)
                             {
                                 List<AdminPanelUserDtoViewModel> userlist = await GetUser(userCity);
@@ -74,7 +85,7 @@ namespace BomoBana.Area.Admin
                             }
                             break;
                         case DisplayUserInLocations.Province:
-                            var userProvince = await userRepository.TableNoTracking.Include(e=>e.City).Where(e => e.City.ProvinceId == LocationId).ToListAsync(cancellationToken);
+                            var userProvince = await userRepository.TableNoTracking.Include(e => e.City).Where(e => e.City.ProvinceId == LocationId).ToListAsync(cancellationToken);
                             if (userProvince != null)
                             {
                                 List<AdminPanelUserDtoViewModel> userlist = await GetUser(userProvince);
@@ -115,7 +126,105 @@ namespace BomoBana.Area.Admin
 
             return View();
         }
+        [HttpPost]
+        public async Task<IActionResult> Create(AdminPanelCreateUserDto Model, CancellationToken cancellationToken)
+        {
 
+            if (!ModelState.IsValid)
+            {
+                AddNotification(NotifyType.Warning, OperationMessage.ModelStateIsNotValid.ToDisplay(), true);
+                return View(Model);
+            }
+            try
+            {
+                var HasUser = await userRepository.FindByPhoneNumber(Model.PhoneNumber, cancellationToken);
+                if (HasUser == null)
+                {
+                    var hasher = new PasswordHasher<User>();
+                    var user = new User
+                    {
+                        PhoneNumber = Model.PhoneNumber,
+                        IsActive = true,
+                        UserType = Model.UserType,
+                        Status = Model.Status,
+                        PhoneNumberConfirmed = true,
+                        UserName = Model.PhoneNumber,
+                        ProfileImage = "User.png",
+                        CityId =Convert.ToInt32(Model.CityId),
+                        TwoFactorEnabled = false,
+                        FirstName = Model.FirstName,
+                        Surname = Model.SurName,
+                        Gender = Model.Gender,
+                        LastLoginDate = DateTime.Now,
+                        NormalizedUserName = Model.PhoneNumber.ToUpperInvariant()
+                    };
+                        user.PasswordHash = hasher.HashPassword(user, Model.Password);
+                    if (Model.ProfileImage.Length > 0)
+                    {
+                        string LName = Guid.NewGuid().ToString("D") + Model.ProfileImage.FileName;
+                        using (var fileStream = new FileStream(Path.Combine(webHostEnvironment.WebRootPath,
+                            ApplicationPathes.User.VirtualUploadFolder, LName), FileMode.Create))
+                        {
+                            await Model.ProfileImage.CopyToAsync(fileStream);
+                            user.ProfileImage = LName;
+                        }
+                    }
+                    var resultUser = await userManager.CreateAsync(user, SecurityHelper.GetSha256Hash(Model.Password));
+                    if (resultUser.Succeeded)
+                    {
+                        bool hasrole = await roleManager.RoleExistsAsync(Model.UserType.ToDisplay());
+                        if (!hasrole)
+                        {
+                            var Role = await roleManager.CreateAsync(new Role
+                            {
+                                Name = Model.UserType.ToDisplay(),
+                                Description = Model.UserType.ToDisplay()
+                            });
+                        }
+                        var result3 = await userManager.AddToRoleAsync(user,Model.UserType.ToDisplay());
+                        var token = await userManager.GenerateChangePhoneNumberTokenAsync(user, user.PhoneNumber);
+                        var result = await userManager.VerifyChangePhoneNumberTokenAsync(user, token, user.PhoneNumber);
+                        if (result)
+                        {
+                            var message = "بام و بوم !اطلاعات شما در سامانه ثبت شد ، از همکاری با شما خرسندیم  ";
+                            var sms = await SmsService.SendSms(user.PhoneNumber, message);
+                            if (!sms)
+                            {
+                                AddNotification(NotifyType.Warning, "خطا در ارسال پیامک", true);
+
+                            }
+                            else
+                            {
+                                AddNotification(NotifyType.Info, "پیامک ارسال شد", true);
+                            }
+                            AddNotification(NotifyType.Success, OperationMessage.OperationSucceed.ToDisplay(), true);
+                            return RedirectToAction("Index");
+                        }
+                        else
+                        {
+                            AddNotification(NotifyType.Error, OperationMessage.OperationFailed.ToDisplay(), true);
+                            return View(Model);
+                        }
+                    }
+                    else
+                    {
+                        AddNotification(NotifyType.Error, OperationMessage.OperationFailed.ToDisplay(), true);
+                        return View(Model);
+                    }
+                }
+                else
+                {
+                    AddNotification(NotifyType.Warning, OperationMessage.DoestExist.ToDisplay(), true);
+                    return View(Model);
+                }
+            }
+            catch (Exception)
+            {
+                ErrorNotification(OperationMessage.OperationFailed.ToDisplay(), true);
+                return RedirectToAction("Error", "Home");
+            }
+
+        }
         #endregion
 
         #region Helper

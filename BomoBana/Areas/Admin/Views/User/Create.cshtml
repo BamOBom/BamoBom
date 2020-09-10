@@ -1,0 +1,244 @@
+﻿@model BomoBana.Areas.Admin.AdminPanelCreateUserDto
+@using Common
+@using EnumValue
+@{
+    ViewData["Title"] = "کاربر جدید";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section Style{
+    <link rel="stylesheet" type="text/css" href="~/admin/assets/libs/select2/dist/css/select2.min.css">
+}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <form class="form-horizontal striped-rows b-form needs-validation" novalidate enctype="multipart/form-data"
+                  asp-area="Admin" asp-action="Create" asp-controller="User">
+                <div class="card-body">
+                    <h4 class="card-title">کاربر جدید</h4>
+                    <div class="form-group row">
+                        <div asp-validation-summary="ModelOnly"></div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="FirstName" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" asp-for="FirstName" class="form-control" placeholder="">
+                            <span asp-validation-for="FirstName"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="SurName" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" asp-for="SurName" class="form-control" placeholder="">
+                            <span asp-validation-for="SurName"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="PhoneNumber" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" asp-for="PhoneNumber" class="form-control" placeholder="">
+                            <span asp-validation-for="PhoneNumber"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Password" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="password" asp-for="Password" class="form-control" placeholder="">
+                            <span asp-validation-for="Password"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="PasswordConfirm" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="password" asp-for="PasswordConfirm" class="form-control" placeholder="">
+                            <span asp-validation-for="PasswordConfirm"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Gender" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="select2 form-control" asp-for="Gender"
+                                    placeholder="انتخاب جنسیت" style="height:40px;width: 100%"
+                                    asp-items="Html.GetEnumSelectList<GenderType>()">
+                            </select>
+                            <span asp-validation-for="Gender"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="UserType" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="select2 form-control" asp-for="UserType"
+                                    placeholder="انتخاب نوع کاربر" style="height:40px;width: 100%"
+                                    asp-items="Html.GetEnumSelectList<UserType>()">
+                            </select>
+                            <span asp-validation-for="UserType"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="Status" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="select2 form-control" asp-for="Status"
+                                    placeholder="انتخاب نوع وضعیت" style="height:40px;width: 100%"
+                                    asp-items="Html.GetEnumSelectList<Status>()">
+                            </select>
+                            <span asp-validation-for="Status"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="DivProvince">
+                        <div class="col-sm-2">
+                            <div class="b-label">استان
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="select2 form-control" id="LoadProvince"
+                                    placeholder="انتخاب استان" style="height: 40px;;width: 100%">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="DivCity">
+                        <div class="col-sm-2">
+                            <div class="b-label">شهر
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="select2 form-control" asp-for="CityId" id="LoadCity"
+                                    placeholder="انتخاب شهر" style="height: 40px;;width: 100%">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <div class="b-label">
+                                <label asp-for="ProfileImage" class="control-label col-form-label"></label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Upload</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" accept="image/x-png" onchange="PreviewImage();" asp-for="ProfileImage" class="custom-file-input">
+                                    <label class="custom-file-label" asp-for="ProfileImage">انتخاب عکس</label>
+                                </div>
+                            </div>
+                            <small id="textHelp" class="form-text text-muted">فرمت عکس باید png باشد</small>
+                            <span asp-validation-for="ProfileImage"></span>
+                            <div class="col-sm-2">
+                                <img id="uploadPreview" style="width: 100px; height: 100px;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="card-body">
+                    <div class="form-group m-b-0 text-right">
+                        <button type="submit" class="btn btn-info waves-effect waves-light">ذخیره</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/Admin/assets/libs/select2/dist/js/select2.full.min.js"></script>
+    <script src="~/Admin/assets/libs/select2/dist/js/select2.min.js"></script>
+    <script src="~/Admin/js/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Admin/assets/libs/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="~/Admin/js/AjaxRequest.js"></script>
+    <script src="~/Admin/js/ToastrNotification.js"></script>
+    <script>
+        function PreviewImage() {
+            var oFReader = new FileReader();
+            oFReader.readAsDataURL(document.getElementById("ProfileImage").files[0]);
+
+            oFReader.onload = function (oFREvent) {
+                document.getElementById("uploadPreview").src = oFREvent.target.result;
+            };
+        };
+        $("#DivCity").hide();
+        $("#LoadProvince").select2({
+            placeholder: "انتخاب استان",
+            allowClear: true,
+            multiple: false,
+
+            ajax: {
+                url: '../Locations/LoadProvince',
+                width: 'resolve',
+                data: function (params) {
+                    return {
+                        item: params.term// search term
+                    };
+                },
+                processResults: function (data) {
+                    return {
+                        results: data.items
+                    };
+                },
+                minimumInputLength: 2,
+                width: 'resolve',
+                cache: true
+            },
+        });
+        $("#LoadProvince").on("select2:select", function (e) {
+            var select_val = $(e.currentTarget).val();
+            $("#DivCity").fadeIn();
+            $("#LoadCity").select2({
+                placeholder: "انتخاب شهر",
+                allowClear: true,
+                multiple: false,
+                ajax: {
+                    url: '../Locations/LoadCity',
+                    width: 'resolve',
+                    data: function (params) {
+                        return {
+                            provinceId: select_val,
+                            item: params.term// search term
+                        };
+                    },
+                    processResults: function (data) {
+                        return {
+                            results: data.items
+                        };
+                    },
+                    minimumInputLength: 2,
+                    width: 'resolve',
+                    cache: true
+                },
+            });
+        });
+    </script>
+}

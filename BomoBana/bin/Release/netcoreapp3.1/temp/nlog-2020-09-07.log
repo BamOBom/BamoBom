@@ -1,0 +1,141 @@
+2020-09-07 00:35:48.1259 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 00:41:19.2634 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 00:42:32.2619 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/User | action: Index
+2020-09-07 00:42:32.2675 | ERROR | An unhandled exception has occurred while executing the request. | System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore.Areas_Admin_Views_Shared_Error.ExecuteAsync() in D:\Project\BomoBana\Git\BomoBana\Areas\Admin\Views\Shared\Error.cshtml:line 9
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/Admin/User | action: Index
+2020-09-07 00:43:25.4387 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 00:45:34.5853 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 00:47:14.9538 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 00:47:29.0592 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/User | action: Index
+2020-09-07 00:47:29.0717 | ERROR | An unhandled exception has occurred while executing the request. | System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.<>c__DisplayClass98_0.<<ExecuteAsync>b__1>d.MoveNext() in D:\Project\BomoBana\Git\BomoBana\Areas\Admin\Views\Shared\_Layout.cshtml:line 526
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.ExecuteAsync() in D:\Project\BomoBana\Git\BomoBana\Areas\Admin\Views\Shared\_Layout.cshtml:line 6
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|27_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/Admin/User | action: Index
+2020-09-07 00:48:16.3895 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/User | action: Index
+2020-09-07 00:48:16.3940 | ERROR | An unhandled exception has occurred while executing the request. | System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.<>c__DisplayClass98_0.<<ExecuteAsync>b__1>d.MoveNext() in D:\Project\BomoBana\Git\BomoBana\Areas\Admin\Views\Shared\_Layout.cshtml:line 526
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.ExecuteAsync() in D:\Project\BomoBana\Git\BomoBana\Areas\Admin\Views\Shared\_Layout.cshtml:line 6
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|27_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/Admin/User | action: Index
+2020-09-07 00:50:13.1478 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 00:50:22.4646 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 00:50:47.6400 | WARN | Invalid password for user 1. |  | Microsoft.AspNetCore.Identity.UserManager | url: https://localhost/Admin/Account/Login | action: Login
+2020-09-07 02:35:26.6986 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 02:40:06.7786 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 03:19:24.6390 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 03:20:23.2099 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 03:21:15.5424 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 03:21:26.7145 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/Brand | action: 
+2020-09-07 03:21:42.3952 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/Brand | action: 
+2020-09-07 03:21:42.5497 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/Product/Create | action: 
+2020-09-07 03:21:52.1565 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 03:22:03.3580 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/Product/Create | action: 
+2020-09-07 03:22:03.3580 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/Brand | action: 
+2020-09-07 03:22:03.3580 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/js/site.js | action: 
+2020-09-07 03:22:03.3580 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/css/site.css | action: 
+2020-09-07 03:22:49.8999 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/Brand | action: 
+2020-09-07 03:22:49.9000 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/Product/Create | action: 
+2020-09-07 03:22:55.6382 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 03:23:06.7811 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/css/site.css | action: 
+2020-09-07 03:23:06.7812 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/css/site.css | action: 
+2020-09-07 03:23:06.7811 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/js/site.js | action: 
+2020-09-07 03:23:06.7811 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/js/site.js | action: 
+2020-09-07 17:35:29.7451 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 17:35:41.1410 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/js/site.js | action: 
+2020-09-07 17:35:41.1410 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/css/site.css | action: 
+2020-09-07 17:35:41.1732 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/js/site.js | action: 
+2020-09-07 17:41:07.3860 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 17:52:16.8239 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 17:53:44.7221 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 18:08:14.0312 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 18:08:25.4110 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/js/site.js | action: 
+2020-09-07 18:08:25.4110 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/css/site.css | action: 
+2020-09-07 18:08:56.9555 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/assets/libs/bootstrap/dist/js/bootstrap.min.js.map | action: 
+2020-09-07 18:08:56.9555 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/assets/libs/popper.js/dist/umd/popper.min.js.map | action: 
+2020-09-07 18:08:56.9555 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/assets/libs/toastr/build/toastr.js.map | action: 
+2020-09-07 18:09:36.0907 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 18:54:23.3023 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/js/site.js | action: 
+2020-09-07 18:54:23.3023 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/css/site.css | action: 
+2020-09-07 18:54:23.4148 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/js/site.js | action: 
+2020-09-07 18:57:12.1723 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-07 18:57:23.6131 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/css/site.css | action: 
+2020-09-07 18:57:23.6131 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/js/site.js | action: 
+2020-09-07 19:01:06.5105 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Image/Setting/Locations/IR.png | action: 
+2020-09-07 19:01:06.5105 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Image/Setting/Locations/IR.png | action: 

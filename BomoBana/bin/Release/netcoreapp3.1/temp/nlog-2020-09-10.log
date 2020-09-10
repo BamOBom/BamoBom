@@ -1,0 +1,406 @@
+2020-09-10 14:56:56.3951 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 14:57:08.4436 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/js/site.js | action: 
+2020-09-10 14:57:08.4436 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/css/site.css | action: 
+2020-09-10 14:57:08.4882 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/js/site.js | action: 
+2020-09-10 14:58:48.0333 | ERROR | Failed executing DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c1].[CreateDate], [c1].[Id], [c1].[Image], [c1].[IsActive], (
+    SELECT COUNT(*)
+    FROM [CategoryProperties] AS [c]
+    WHERE ([c1].[Id] = [c].[CategoryId]) AND ([c].[IsDeleted] <> CAST(1 AS bit))) AS [PeropertyCategories], (
+    SELECT COUNT(*)
+    FROM [Categories] AS [c0]
+    WHERE [c1].[Id] = [c0].[ParentCategoryId]) AS [SubCategories], [c1].[Title]
+FROM [Categories] AS [c1]
+WHERE [c1].[ParentCategoryId] IS NULL |  | Microsoft.EntityFrameworkCore.Database.Command | url: https://localhost/Admin/Category | action: Index
+2020-09-10 14:58:48.2196 | ERROR | An exception occurred while iterating over the results of a query for context type 'Data.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Categories'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c8b91970-e7a1-4dbe-ae1f-55f8166be39f
+Error Number:208,State:1,Class:16 | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Categories'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c8b91970-e7a1-4dbe-ae1f-55f8166be39f
+Error Number:208,State:1,Class:16 | Microsoft.EntityFrameworkCore.Query | url: https://localhost/Admin/Category | action: Index
+2020-09-10 14:58:58.3144 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Image/Setting/Locations/IR.png | action: 
+2020-09-10 14:58:58.3144 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Image/Setting/Locations/IR.png | action: 
+2020-09-10 14:58:58.3144 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Admin/Category | action: Index
+2020-09-10 14:58:58.3144 | ERROR | An unhandled exception has occurred while executing the request. | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Categories'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at BomoBana.Areas.Admin.CategoryController.Index(CancellationToken cancellationToken) in D:\Project\BomoBana\Git\BomoBana\Areas\Admin\Controllers\CategoryController.cs:line 44
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:c8b91970-e7a1-4dbe-ae1f-55f8166be39f
+Error Number:208,State:1,Class:16 | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/Admin/Category | action: Index
+2020-09-10 14:58:58.5405 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Image/Setting/Locations/IR.png | action: 
+2020-09-10 14:58:58.7683 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Image/Setting/Locations/IR.png | action: 
+2020-09-10 14:59:38.3505 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Image/Setting/Locations/IR.png | action: 
+2020-09-10 14:59:38.3505 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Image/Setting/Locations/IR.png | action: 
+2020-09-10 14:59:38.3505 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Image/Setting/Locations/IR.png | action: 
+2020-09-10 15:00:09.2935 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Image/Setting/Locations/IR.png | action: 
+2020-09-10 15:00:09.2935 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/Image/Setting/Locations/IR.png | action: 
+2020-09-10 16:15:56.1548 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:16:08.0373 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/css/site.css | action: 
+2020-09-10 16:16:08.0373 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/js/site.js | action: 
+2020-09-10 16:16:08.0664 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/js/site.js | action: 
+2020-09-10 16:18:59.7875 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:19:00.4733 | FATAL | Application startup exception | System.MissingMethodException: Method not found: 'Void Microsoft.Extensions.Logging.Console.ConsoleLogger..ctor(System.String, System.Func`3<System.String,Microsoft.Extensions.Logging.LogLevel,Boolean>, Boolean)'.
+   at Microsoft.AspNetCore.SpaServices.Util.LoggerFinder.GetOrCreateLogger(IApplicationBuilder appBuilder, String logCategoryName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.Attach(ISpaBuilder spaBuilder, String npmScriptName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions.UseAngularCliServer(ISpaBuilder spaBuilder, String npmScript)
+   at BomoBana.Startup.<>c__DisplayClass6_0.<Configure>b__1(ISpaBuilder spa) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 241
+   at Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions.UseSpa(IApplicationBuilder app, Action`1 configuration)
+   at BomoBana.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 232
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication() | Microsoft.AspNetCore.Hosting.WebHost | url:  | action: 
+2020-09-10 16:19:15.5868 | ERROR | Stopped program because of exception | System.MissingMethodException: Method not found: 'Void Microsoft.Extensions.Logging.Console.ConsoleLogger..ctor(System.String, System.Func`3<System.String,Microsoft.Extensions.Logging.LogLevel,Boolean>, Boolean)'.
+   at Microsoft.AspNetCore.SpaServices.Util.LoggerFinder.GetOrCreateLogger(IApplicationBuilder appBuilder, String logCategoryName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.Attach(ISpaBuilder spaBuilder, String npmScriptName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions.UseAngularCliServer(ISpaBuilder spaBuilder, String npmScript)
+   at BomoBana.Startup.<>c__DisplayClass6_0.<Configure>b__1(ISpaBuilder spa) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 241
+   at Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions.UseSpa(IApplicationBuilder app, Action`1 configuration)
+   at BomoBana.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 232
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+   at Microsoft.AspNetCore.Hosting.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at BomoBana.Program.Main(String[] args) in D:\Project\BomoBana\Git\BomoBana\Program.cs:line 53 | BomoBana.Program | url:  | action: 
+2020-09-10 16:21:30.7224 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:21:32.0301 | FATAL | Application startup exception | System.MissingMethodException: Method not found: 'Void Microsoft.Extensions.Logging.Console.ConsoleLogger..ctor(System.String, System.Func`3<System.String,Microsoft.Extensions.Logging.LogLevel,Boolean>, Boolean)'.
+   at Microsoft.AspNetCore.SpaServices.Util.LoggerFinder.GetOrCreateLogger(IApplicationBuilder appBuilder, String logCategoryName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.Attach(ISpaBuilder spaBuilder, String npmScriptName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions.UseAngularCliServer(ISpaBuilder spaBuilder, String npmScript)
+   at BomoBana.Startup.<>c__DisplayClass6_0.<Configure>b__1(ISpaBuilder spa) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 241
+   at Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions.UseSpa(IApplicationBuilder app, Action`1 configuration)
+   at BomoBana.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 232
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication() | Microsoft.AspNetCore.Hosting.WebHost | url:  | action: 
+2020-09-10 16:21:47.0527 | ERROR | Stopped program because of exception | System.MissingMethodException: Method not found: 'Void Microsoft.Extensions.Logging.Console.ConsoleLogger..ctor(System.String, System.Func`3<System.String,Microsoft.Extensions.Logging.LogLevel,Boolean>, Boolean)'.
+   at Microsoft.AspNetCore.SpaServices.Util.LoggerFinder.GetOrCreateLogger(IApplicationBuilder appBuilder, String logCategoryName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.Attach(ISpaBuilder spaBuilder, String npmScriptName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions.UseAngularCliServer(ISpaBuilder spaBuilder, String npmScript)
+   at BomoBana.Startup.<>c__DisplayClass6_0.<Configure>b__1(ISpaBuilder spa) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 241
+   at Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions.UseSpa(IApplicationBuilder app, Action`1 configuration)
+   at BomoBana.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 232
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+   at Microsoft.AspNetCore.Hosting.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at BomoBana.Program.Main(String[] args) in D:\Project\BomoBana\Git\BomoBana\Program.cs:line 53 | BomoBana.Program | url:  | action: 
+2020-09-10 16:22:56.1503 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:22:57.2637 | FATAL | Application startup exception | System.MissingMethodException: Method not found: 'Void Microsoft.Extensions.Logging.Console.ConsoleLogger..ctor(System.String, System.Func`3<System.String,Microsoft.Extensions.Logging.LogLevel,Boolean>, Boolean)'.
+   at Microsoft.AspNetCore.SpaServices.Util.LoggerFinder.GetOrCreateLogger(IApplicationBuilder appBuilder, String logCategoryName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.Attach(ISpaBuilder spaBuilder, String npmScriptName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions.UseAngularCliServer(ISpaBuilder spaBuilder, String npmScript)
+   at BomoBana.Startup.<>c__DisplayClass6_0.<Configure>b__1(ISpaBuilder spa) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 241
+   at Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions.UseSpa(IApplicationBuilder app, Action`1 configuration)
+   at BomoBana.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 232
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication() | Microsoft.AspNetCore.Hosting.WebHost | url:  | action: 
+2020-09-10 16:23:12.2840 | ERROR | Stopped program because of exception | System.MissingMethodException: Method not found: 'Void Microsoft.Extensions.Logging.Console.ConsoleLogger..ctor(System.String, System.Func`3<System.String,Microsoft.Extensions.Logging.LogLevel,Boolean>, Boolean)'.
+   at Microsoft.AspNetCore.SpaServices.Util.LoggerFinder.GetOrCreateLogger(IApplicationBuilder appBuilder, String logCategoryName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.Attach(ISpaBuilder spaBuilder, String npmScriptName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions.UseAngularCliServer(ISpaBuilder spaBuilder, String npmScript)
+   at BomoBana.Startup.<>c__DisplayClass6_0.<Configure>b__1(ISpaBuilder spa) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 241
+   at Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions.UseSpa(IApplicationBuilder app, Action`1 configuration)
+   at BomoBana.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 232
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+   at Microsoft.AspNetCore.Hosting.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at BomoBana.Program.Main(String[] args) in D:\Project\BomoBana\Git\BomoBana\Program.cs:line 53 | BomoBana.Program | url:  | action: 
+2020-09-10 16:25:02.7634 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:25:04.0246 | FATAL | Application startup exception | System.MissingMethodException: Method not found: 'Void Microsoft.Extensions.Logging.Console.ConsoleLogger..ctor(System.String, System.Func`3<System.String,Microsoft.Extensions.Logging.LogLevel,Boolean>, Boolean)'.
+   at Microsoft.AspNetCore.SpaServices.Util.LoggerFinder.GetOrCreateLogger(IApplicationBuilder appBuilder, String logCategoryName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.Attach(ISpaBuilder spaBuilder, String npmScriptName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions.UseAngularCliServer(ISpaBuilder spaBuilder, String npmScript)
+   at BomoBana.Startup.<>c__DisplayClass6_0.<Configure>b__2(ISpaBuilder spa) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 252
+   at Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions.UseSpa(IApplicationBuilder app, Action`1 configuration)
+   at BomoBana.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 243
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication() | Microsoft.AspNetCore.Hosting.WebHost | url:  | action: 
+2020-09-10 16:25:19.0486 | ERROR | Stopped program because of exception | System.MissingMethodException: Method not found: 'Void Microsoft.Extensions.Logging.Console.ConsoleLogger..ctor(System.String, System.Func`3<System.String,Microsoft.Extensions.Logging.LogLevel,Boolean>, Boolean)'.
+   at Microsoft.AspNetCore.SpaServices.Util.LoggerFinder.GetOrCreateLogger(IApplicationBuilder appBuilder, String logCategoryName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.Attach(ISpaBuilder spaBuilder, String npmScriptName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions.UseAngularCliServer(ISpaBuilder spaBuilder, String npmScript)
+   at BomoBana.Startup.<>c__DisplayClass6_0.<Configure>b__2(ISpaBuilder spa) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 252
+   at Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions.UseSpa(IApplicationBuilder app, Action`1 configuration)
+   at BomoBana.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 243
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+   at Microsoft.AspNetCore.Hosting.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at BomoBana.Program.Main(String[] args) in D:\Project\BomoBana\Git\BomoBana\Program.cs:line 53 | BomoBana.Program | url:  | action: 
+2020-09-10 16:27:38.2843 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:27:39.2586 | FATAL | Application startup exception | System.MissingMethodException: Method not found: 'Void Microsoft.Extensions.Logging.Console.ConsoleLogger..ctor(System.String, System.Func`3<System.String,Microsoft.Extensions.Logging.LogLevel,Boolean>, Boolean)'.
+   at Microsoft.AspNetCore.SpaServices.Util.LoggerFinder.GetOrCreateLogger(IApplicationBuilder appBuilder, String logCategoryName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.Attach(ISpaBuilder spaBuilder, String npmScriptName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions.UseAngularCliServer(ISpaBuilder spaBuilder, String npmScript)
+   at BomoBana.Startup.<>c__DisplayClass6_0.<Configure>b__1(ISpaBuilder spa) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 252
+   at Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions.UseSpa(IApplicationBuilder app, Action`1 configuration)
+   at BomoBana.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 243
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication() | Microsoft.AspNetCore.Hosting.WebHost | url:  | action: 
+2020-09-10 16:27:54.2881 | ERROR | Stopped program because of exception | System.MissingMethodException: Method not found: 'Void Microsoft.Extensions.Logging.Console.ConsoleLogger..ctor(System.String, System.Func`3<System.String,Microsoft.Extensions.Logging.LogLevel,Boolean>, Boolean)'.
+   at Microsoft.AspNetCore.SpaServices.Util.LoggerFinder.GetOrCreateLogger(IApplicationBuilder appBuilder, String logCategoryName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.Attach(ISpaBuilder spaBuilder, String npmScriptName)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddlewareExtensions.UseAngularCliServer(ISpaBuilder spaBuilder, String npmScript)
+   at BomoBana.Startup.<>c__DisplayClass6_0.<Configure>b__1(ISpaBuilder spa) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 252
+   at Microsoft.AspNetCore.Builder.SpaApplicationBuilderExtensions.UseSpa(IApplicationBuilder app, Action`1 configuration)
+   at BomoBana.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in D:\Project\BomoBana\Git\BomoBana\Startup.cs:line 243
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+   at Microsoft.AspNetCore.Hosting.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at BomoBana.Program.Main(String[] args) in D:\Project\BomoBana\Git\BomoBana\Program.cs:line 53 | BomoBana.Program | url:  | action: 
+2020-09-10 16:31:05.4028 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:31:10.9200 | ERROR | Option "port" was already specified with value 4200. The new value 50080 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:31:21.9438 | ERROR |     WARNING: Zone.js does not support native async/await in ES2017.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:31:21.9438 | ERROR |     These blocks are not intercepted by zone.js and will not triggering change detection.
+    See: https://github.com/angular/zone.js/pull/1140 for more information.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:33:02.6297 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:33:05.9920 | ERROR | Option "port" was already specified with value 4200. The new value 50177 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:33:32.9048 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:33:36.1705 | ERROR | Option "port" was already specified with value 4200. The new value 50183 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:33:39.9304 | ERROR |     WARNING: Zone.js does not support native async/await in ES2017.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:33:39.9304 | ERROR |     These blocks are not intercepted by zone.js and will not triggering change detection.
+    See: https://github.com/angular/zone.js/pull/1140 for more information.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:35:10.1973 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:35:13.5332 | ERROR | Option "port" was already specified with value 4200. The new value 50325 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:35:17.2342 | ERROR |     WARNING: Zone.js does not support native async/await in ES2017.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:35:17.2342 | ERROR |     These blocks are not intercepted by zone.js and will not triggering change detection.
+    See: https://github.com/angular/zone.js/pull/1140 for more information.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:37:04.8502 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:37:07.3452 | ERROR | Option "port" was already specified with value 4200. The new value 50502 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:37:10.5039 | ERROR |     WARNING: Zone.js does not support native async/await in ES2017.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:37:10.5039 | ERROR |     These blocks are not intercepted by zone.js and will not triggering change detection.
+    See: https://github.com/angular/zone.js/pull/1140 for more information.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:37:26.4538 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:37:29.3406 | ERROR | Option "port" was already specified with value 4200. The new value 50518 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:37:32.7044 | ERROR |     WARNING: Zone.js does not support native async/await in ES2017.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:37:32.7044 | ERROR |     These blocks are not intercepted by zone.js and will not triggering change detection.
+    See: https://github.com/angular/zone.js/pull/1140 for more information.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:38:37.6411 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:38:42.1207 | ERROR | Option "port" was already specified with value 4200. The new value 50558 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:38:46.3212 | ERROR |     WARNING: Zone.js does not support native async/await in ES2017.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:38:46.3212 | ERROR |     These blocks are not intercepted by zone.js and will not triggering change detection.
+    See: https://github.com/angular/zone.js/pull/1140 for more information.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:42:59.6834 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 16:43:04.9441 | ERROR | Option "port" was already specified with value 4200. The new value 50748 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:43:14.4633 | ERROR |     WARNING: Zone.js does not support native async/await in ES2017.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:43:14.4633 | ERROR |     These blocks are not intercepted by zone.js and will not triggering change detection.
+    See: https://github.com/angular/zone.js/pull/1140 for more information.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 16:51:27.9106 | ERROR | Elmah local exception |  | ElmahCore.Mvc.ErrorLogMiddleware | url: https://localhost/sockjs-node/447/hxqfdz3t/websocket | action: 
+2020-09-10 16:51:27.9106 | ERROR | An unhandled exception has occurred while executing the request. | System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context) | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/sockjs-node/447/hxqfdz3t/websocket | action: 
+2020-09-10 16:51:27.9106 | WARN | The response has already started, the error page middleware will not be executed. |  | Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware | url: https://localhost/sockjs-node/447/hxqfdz3t/websocket | action: 
+2020-09-10 16:51:27.9106 | ERROR | The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived' | System.Net.WebSockets.WebSocketException (0x80004005): The WebSocket is in an invalid state ('Aborted') for this operation. Valid states are: 'Open, CloseReceived'
+   at System.Net.WebSockets.WebSocketValidate.ThrowIfInvalidState(WebSocketState currentState, Boolean isDisposed, WebSocketState[] validStates)
+   at System.Net.WebSockets.ManagedWebSocket.CloseOutputAsyncCore(WebSocketCloseStatus closeStatus, String statusDescription, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ElmahCore.Mvc.ErrorLogMiddleware.Invoke(HttpContext context, Func`1 next)
+   at ElmahCore.Mvc.BuilderHelper.<>c.<<UseElmah>b__0_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at WebFramework.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in D:\Project\BomoBana\Git\WebFramework\Middlewares\CustomExceptionHandlerMiddleware.cs:line 49 | WebFramework.Middlewares.CustomExceptionHandlerMiddleware | url: https://localhost/sockjs-node/447/hxqfdz3t/websocket | action: 
+2020-09-10 16:51:27.9661 | ERROR | Connection ID "18014398528272465925", Request ID "80000006-0004-fa00-b63f-84710c7967bb": An unhandled exception was thrown by the application. | System.InvalidOperationException: The response has already started, the http status code middleware will not be executed.
+   at WebFramework.Middlewares.CustomExceptionHandlerMiddleware.<>c__DisplayClass4_0.<<Invoke>g__WriteToResponseAsync|0>d.MoveNext() in D:\Project\BomoBana\Git\WebFramework\Middlewares\CustomExceptionHandlerMiddleware.cs:line 113
+--- End of stack trace from previous location where exception was thrown ---
+   at WebFramework.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in D:\Project\BomoBana\Git\WebFramework\Middlewares\CustomExceptionHandlerMiddleware.cs:line 105
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at WebMarkupMin.AspNetCore3.WebMarkupMinMiddleware.ProcessAsync(HttpContext context, Boolean useMinification, Boolean useCompression)
+   at WebMarkupMin.AspNetCore3.WebMarkupMinMiddleware.ProcessAsync(HttpContext context, Boolean useMinification, Boolean useCompression)
+   at WebMarkupMin.AspNetCore3.WebMarkupMinMiddlewareBase.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync() | Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer | url: https://localhost/sockjs-node/447/hxqfdz3t/websocket | action: 
+2020-09-10 17:20:20.3762 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-10 17:20:24.8193 | ERROR | Option "port" was already specified with value 4200. The new value 51800 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 17:20:31.8201 | ERROR |     WARNING: Zone.js does not support native async/await in ES2017.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-10 17:20:31.8201 | ERROR |     These blocks are not intercepted by zone.js and will not triggering change detection.
+    See: https://github.com/angular/zone.js/pull/1140 for more information.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 

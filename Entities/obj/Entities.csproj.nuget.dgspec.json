@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Entities\\Entities.csproj": {}
+    "D:\\New folder\\BamoBom\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Common\\Common.csproj": {
+    "D:\\New folder\\BamoBom\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\New folder\\BamoBom\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\illiya.ir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Common\\obj\\",
+        "projectPath": "D:\\New folder\\BamoBom\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\emertat\\.nuget\\packages\\",
+        "outputPath": "D:\\New folder\\BamoBom\\Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\illiya.ir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\emertat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,21 +77,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Entities\\Entities.csproj": {
+    "D:\\New folder\\BamoBom\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\New folder\\BamoBom\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\illiya.ir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Entities\\obj\\",
+        "projectPath": "D:\\New folder\\BamoBom\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\emertat\\.nuget\\packages\\",
+        "outputPath": "D:\\New folder\\BamoBom\\Entities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\illiya.ir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\emertat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,8 +107,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Common\\Common.csproj"
+              "D:\\New folder\\BamoBom\\Common\\Common.csproj": {
+                "projectPath": "D:\\New folder\\BamoBom\\Common\\Common.csproj"
               }
             }
           }
@@ -136,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

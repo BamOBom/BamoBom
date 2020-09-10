@@ -67,6 +67,9 @@ namespace Common
         public static class User
         {
             public const string VirtualFolder = @"/Image/User/{0}";
+            public const string VirtualUploadFolder = @"Images/User/";
+            public const string VirtualShowFolder = @"Images\User\";
+            public const string VirtualDeleteFile = @"/Images/User/";
         }
         #endregion
       

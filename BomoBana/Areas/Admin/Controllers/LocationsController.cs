@@ -304,5 +304,63 @@ namespace BomoBana.Areas.Admin
         #endregion
 
         #endregion
+
+        #region LoadAjax
+        public async Task<IActionResult> LoadProvince(string item, CancellationToken cancellationToken)
+        {
+            try
+            {
+                List<LoadAjaxProvinceDto> list = await _ProvinceService.TableNoTracking.Where(e => e.CountryId == 1
+                && e.IsActive).ProjectTo<LoadAjaxProvinceDto>(_mapper.ConfigurationProvider).OrderBy(e => e.text)
+               .ToListAsync(cancellationToken);
+                if (!(string.IsNullOrEmpty(item) || string.IsNullOrWhiteSpace(item)))
+                {
+                    list = list.Where(x => x.text.ToLower().StartsWith(item.ToLower())).ToList();
+                }
+                SuccessNotification(OperationMessage.FileSaved.ToDisplay(), true);
+                return new JsonResult(new { items = list });
+            }
+            catch (Exception)
+            {
+                ErrorNotification(OperationMessage.OperationFailed.ToDisplay(), true);
+                return new JsonResult(new { items = false });
+
+            }
+
+        }
+        public async Task<IActionResult> LoadCity(string item, int provinceId, CancellationToken cancellationToken)
+        {
+            try
+            {
+                List<LoadAjaxCityDto> list = await _CityService.TableNoTracking.Where(e => e.ProvinceId == provinceId
+                && e.IsActive).ProjectTo<LoadAjaxCityDto>(_mapper.ConfigurationProvider).OrderBy(e => e.text)
+               .ToListAsync(cancellationToken);
+                if (!(string.IsNullOrEmpty(item) || string.IsNullOrWhiteSpace(item)))
+                {
+                    list = list.Where(x => x.text.ToLower().StartsWith(item.ToLower())).ToList();
+                }
+                SuccessNotification(OperationMessage.FileSaved.ToDisplay(), true);
+                if (list == null)
+                {
+                    return new JsonResult(new { items = false });
+
+                }
+                else
+                {
+                    return new JsonResult(new { items = list });
+
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorNotification(OperationMessage.OperationFailed.ToDisplay(), true);
+                return new JsonResult(new { items = false });
+
+            }
+
+        }
+
+        #endregion
+
     }
 }

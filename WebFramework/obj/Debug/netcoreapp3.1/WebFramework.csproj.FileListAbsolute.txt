@@ -19,24 +19,45 @@ D:\Project\BomoBana\BomoBana\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.c
 D:\Project\BomoBana\BomoBana\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.dll
 D:\Project\BomoBana\BomoBana\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.pdb
 D:\Project\BomoBana\BomoBana\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.genruntimeconfig.cache
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.deps.json
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.runtimeconfig.json
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.runtimeconfig.dev.json
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.dll
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.pdb
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Common.dll
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Data.dll
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Entities.dll
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Services.dll
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Services.pdb
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Common.pdb
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Data.pdb
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Entities.pdb
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csprojAssemblyReference.cache
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.AssemblyInfoInputs.cache
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.AssemblyInfo.cs
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csproj.CoreCompileInputs.cache
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csproj.CopyComplete
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.dll
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.pdb
-C:\Users\illiya.ir\Documents\GitHub\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.genruntimeconfig.cache
+D:\Project\BomoBana\Git\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.deps.json
+D:\Project\BomoBana\Git\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.runtimeconfig.json
+D:\Project\BomoBana\Git\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.runtimeconfig.dev.json
+D:\Project\BomoBana\Git\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.dll
+D:\Project\BomoBana\Git\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.pdb
+D:\Project\BomoBana\Git\WebFramework\bin\Debug\netcoreapp3.1\Common.dll
+D:\Project\BomoBana\Git\WebFramework\bin\Debug\netcoreapp3.1\Data.dll
+D:\Project\BomoBana\Git\WebFramework\bin\Debug\netcoreapp3.1\Entities.dll
+D:\Project\BomoBana\Git\WebFramework\bin\Debug\netcoreapp3.1\Services.dll
+D:\Project\BomoBana\Git\WebFramework\bin\Debug\netcoreapp3.1\Services.pdb
+D:\Project\BomoBana\Git\WebFramework\bin\Debug\netcoreapp3.1\Common.pdb
+D:\Project\BomoBana\Git\WebFramework\bin\Debug\netcoreapp3.1\Data.pdb
+D:\Project\BomoBana\Git\WebFramework\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\Project\BomoBana\Git\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csprojAssemblyReference.cache
+D:\Project\BomoBana\Git\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csproj.CoreCompileInputs.cache
+D:\Project\BomoBana\Git\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.AssemblyInfoInputs.cache
+D:\Project\BomoBana\Git\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.AssemblyInfo.cs
+D:\Project\BomoBana\Git\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csproj.CopyComplete
+D:\Project\BomoBana\Git\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.dll
+D:\Project\BomoBana\Git\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.pdb
+D:\Project\BomoBana\Git\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.genruntimeconfig.cache
+D:\New folder\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.deps.json
+D:\New folder\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.runtimeconfig.json
+D:\New folder\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.runtimeconfig.dev.json
+D:\New folder\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.dll
+D:\New folder\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.pdb
+D:\New folder\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Common.dll
+D:\New folder\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Data.dll
+D:\New folder\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Entities.dll
+D:\New folder\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Services.dll
+D:\New folder\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Services.pdb
+D:\New folder\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Common.pdb
+D:\New folder\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Data.pdb
+D:\New folder\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\New folder\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csprojAssemblyReference.cache
+D:\New folder\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csproj.CoreCompileInputs.cache
+D:\New folder\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.AssemblyInfoInputs.cache
+D:\New folder\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.AssemblyInfo.cs
+D:\New folder\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csproj.CopyComplete
+D:\New folder\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.dll
+D:\New folder\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.pdb
+D:\New folder\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.genruntimeconfig.cache

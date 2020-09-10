@@ -4,9 +4,17 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <NoWin32Manifest>true</NoWin32Manifest>
-    <SpaRoot>angular\</SpaRoot>
     <Nullable>enable</Nullable>
     <LangVersion>8.0</LangVersion>
+
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>ClientApp\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+    <!-- Set this to true if you enable server-side prerendering -->
+    <BuildServerSideRenderer>false</BuildServerSideRenderer>
+    
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -15,10 +23,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\_ViewStart.cshtml" />
-  </ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.8" />
 
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.ResponseCompression" Version="2.2.0" />
 
     <PackageReference Include="Microsoft.AspNetCore.Rewrite" Version="2.2.0" />
@@ -27,7 +33,6 @@
     <PackageReference Include="ExcelDataReader" Version="3.6.0" />
     <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.5" />
-    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
    
     <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="3.1.5">
@@ -119,7 +124,6 @@
     <Folder Include="wwwroot\Admin\assets\libs\morris.js\less\" />
     <Folder Include="wwwroot\Admin\assets\libs\morris.js\lib\" />
     <Folder Include="wwwroot\Admin\assets\libs\pickadate\lib\themes-source\" />
-    <Folder Include="wwwroot\Image\" />
   </ItemGroup>
   
   <ItemGroup>
@@ -148,7 +152,6 @@
     <None Include="Areas\Admin\Views\User\Index.cshtml" />
     <None Include="Areas\Admin\Views\_ViewImports.cshtml" />
     <None Include="Areas\Admin\Views\_ViewStart.cshtml" />
-    <None Include="Views\_ViewStart.cshtml" />
     <None Include="wwwroot\Admin\assets\extra-libs\block-ui\block-ui.js" />
     <None Include="wwwroot\Admin\assets\extra-libs\c3\c3.min.js" />
     <None Include="wwwroot\Admin\assets\extra-libs\c3\d3.min.js" />
@@ -3878,4 +3881,38 @@
     <None Include="wwwroot\Admin\js\ToastrNotification.js" />
     <None Include="wwwroot\Admin\js\waves.js" />
   </ItemGroup>
+
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Content Remove="$(SpaRoot)**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Angular\src\assets\Fonts.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Angular\src\assets\Fonts.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --prod" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr -- --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
+      <DistFiles Include="$(SpaRoot)node_modules\**" Condition="'$(BuildServerSideRenderer)' == 'true'" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
 </Project>

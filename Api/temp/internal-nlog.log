@@ -15,3 +15,88 @@
 2020-09-05 20:11:21.4288 Info Found 53 configuration items
 2020-09-05 20:11:21.4659 Info Configuration initialized.
 2020-09-05 20:11:21.4659 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.8.10751. Product version: 4.6.8.
+2020-09-07 18:56:27.3538 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-09-07 18:56:27.3675 Info Loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-09-07 18:56:27.4854 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.2.1321. Product version: 1.6.2.
+2020-09-07 18:56:27.6539 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-09-07 18:56:27.6562 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-09-07 18:56:27.6562 Info Loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-09-07 18:56:27.7900 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.2.1619. Product version: 4.9.2.
+2020-09-07 18:56:27.7900 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-09-07 18:56:27.8003 Info Message Template Auto Format enabled
+2020-09-07 18:56:27.8003 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-07 18:56:27.8129 Info Loading assembly: Sentry.NLog
+2020-09-07 18:56:28.1934 Info Adding target AsyncTargetWrapper(Name=LogFile)
+2020-09-07 18:56:28.2112 Info Adding target AsyncTargetWrapper(Name=ColorConsole)
+2020-09-07 18:56:28.2434 Info Adding target AsyncTargetWrapper(Name=Sentry)
+2020-09-07 18:56:28.3226 Info Found 53 configuration items
+2020-09-07 18:56:28.4145 Info Configuration initialized.
+2020-09-07 18:56:28.4145 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.8.10751. Product version: 4.6.8.
+2020-09-08 10:56:30.2692 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-09-08 10:56:30.2692 Info Loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-09-08 10:56:30.3442 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.2.1321. Product version: 1.6.2.
+2020-09-08 10:56:30.5226 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-09-08 10:56:30.5226 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-09-08 10:56:30.5226 Info Loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-09-08 10:56:30.6334 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.2.1619. Product version: 4.9.2.
+2020-09-08 10:56:30.6334 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-09-08 10:56:30.6411 Info Message Template Auto Format enabled
+2020-09-08 10:56:30.6411 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-08 10:56:30.6411 Info Loading assembly: Sentry.NLog
+2020-09-08 10:56:30.8363 Info Adding target AsyncTargetWrapper(Name=LogFile)
+2020-09-08 10:56:30.8446 Info Adding target AsyncTargetWrapper(Name=ColorConsole)
+2020-09-08 10:56:30.8446 Info Adding target AsyncTargetWrapper(Name=Sentry)
+2020-09-08 10:56:30.8881 Info Found 53 configuration items
+2020-09-08 10:56:30.9243 Info Configuration initialized.
+2020-09-08 10:56:30.9243 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.8.10751. Product version: 4.6.8.
+2020-09-08 10:58:44.2986 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-09-08 10:58:44.2986 Info Loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-09-08 10:58:44.3188 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.2.1321. Product version: 1.6.2.
+2020-09-08 10:58:44.3188 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-09-08 10:58:44.3188 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-09-08 10:58:44.3188 Info Loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-09-08 10:58:44.3284 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.2.1619. Product version: 4.9.2.
+2020-09-08 10:58:44.3284 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-09-08 10:58:44.3284 Info Message Template Auto Format enabled
+2020-09-08 10:58:44.3439 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-08 10:58:44.3439 Info Loading assembly: Sentry.NLog
+2020-09-08 10:58:44.4451 Info Adding target AsyncTargetWrapper(Name=LogFile)
+2020-09-08 10:58:44.4583 Info Adding target AsyncTargetWrapper(Name=ColorConsole)
+2020-09-08 10:58:44.4798 Info Adding target AsyncTargetWrapper(Name=Sentry)
+2020-09-08 10:58:44.5388 Info Found 53 configuration items
+2020-09-08 10:58:44.6234 Info Configuration initialized.
+2020-09-08 10:58:44.6234 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.8.10751. Product version: 4.6.8.
+2020-09-08 11:02:52.4692 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-09-08 11:02:52.4692 Info Loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-09-08 11:02:52.4692 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.2.1321. Product version: 1.6.2.
+2020-09-08 11:02:52.4692 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-09-08 11:02:52.4692 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-09-08 11:02:52.4692 Info Loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-09-08 11:02:52.4692 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.2.1619. Product version: 4.9.2.
+2020-09-08 11:02:52.4857 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-09-08 11:02:52.4857 Info Message Template Auto Format enabled
+2020-09-08 11:02:52.4857 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-08 11:02:52.4857 Info Loading assembly: Sentry.NLog
+2020-09-08 11:02:52.5376 Info Adding target AsyncTargetWrapper(Name=LogFile)
+2020-09-08 11:02:52.5376 Info Adding target AsyncTargetWrapper(Name=ColorConsole)
+2020-09-08 11:02:52.5547 Info Adding target AsyncTargetWrapper(Name=Sentry)
+2020-09-08 11:02:52.6030 Info Found 53 configuration items
+2020-09-08 11:02:52.6370 Info Configuration initialized.
+2020-09-08 11:02:52.6370 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.8.10751. Product version: 4.6.8.
+2020-09-08 11:04:46.8393 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-09-08 11:04:46.8453 Info Loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-09-08 11:04:46.8453 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.2.1321. Product version: 1.6.2.
+2020-09-08 11:04:46.8453 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-09-08 11:04:46.8453 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-09-08 11:04:46.8453 Info Loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-09-08 11:04:46.8453 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.2.1619. Product version: 4.9.2.
+2020-09-08 11:04:46.8453 Info Auto loading assembly file: D:\Project\BomoBana\Git\Api\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-09-08 11:04:46.8603 Info Message Template Auto Format enabled
+2020-09-08 11:04:46.8603 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-08 11:04:46.8603 Info Loading assembly: Sentry.NLog
+2020-09-08 11:04:46.9259 Info Adding target AsyncTargetWrapper(Name=LogFile)
+2020-09-08 11:04:46.9259 Info Adding target AsyncTargetWrapper(Name=ColorConsole)
+2020-09-08 11:04:46.9418 Info Adding target AsyncTargetWrapper(Name=Sentry)
+2020-09-08 11:04:46.9711 Info Found 53 configuration items
+2020-09-08 11:04:47.0085 Info Configuration initialized.
+2020-09-08 11:04:47.0085 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.8.10751. Product version: 4.6.8.

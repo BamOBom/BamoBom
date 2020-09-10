@@ -23,12 +23,12 @@ namespace Entities
         [StringLength(100)]
         public string FirstName { get; set; }
         public string Surname { get; set; }
-        public GenderType Gender { get; set; } = GenderType.None;
+        public GenderType Gender { get; set; }
         public bool IsActive { get; set; }
         public DateTimeOffset? LastLoginDate { get; set; }
         public int CityId { get; set; }
         public virtual City City { get; set; }
-        public UserType UserType { get; set; } = UserType.None;
+        public UserType UserType { get; set; }
         public Status Status { get; set; } = Status.Draft;
         public string ProfileImage { get; set; }
 

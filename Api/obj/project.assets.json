@@ -4320,7 +4320,10 @@
         },
         "runtime": {
           "bin/placeholder/WebFramework.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -12359,19 +12362,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\illiya.ir\\.nuget\\packages\\": {}
+    "C:\\Users\\emertat\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Api\\Api.csproj",
+      "projectUniqueName": "D:\\New folder\\BamoBom\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Api\\Api.csproj",
-      "packagesPath": "C:\\Users\\illiya.ir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Api\\obj\\",
+      "projectPath": "D:\\New folder\\BamoBom\\Api\\Api.csproj",
+      "packagesPath": "C:\\Users\\emertat\\.nuget\\packages\\",
+      "outputPath": "D:\\New folder\\BamoBom\\Api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\illiya.ir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\emertat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12384,8 +12391,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\WebFramework\\WebFramework.csproj": {
-              "projectPath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\WebFramework\\WebFramework.csproj"
+            "D:\\New folder\\BamoBom\\WebFramework\\WebFramework.csproj": {
+              "projectPath": "D:\\New folder\\BamoBom\\WebFramework\\WebFramework.csproj"
             }
           }
         }
@@ -12498,7 +12505,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
       }
     }
   },

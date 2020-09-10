@@ -21,9 +21,6 @@ namespace EnumValue
     }
     public enum GenderType
     {
-        [Display(Name = "نامشخص")]
-        None = 0,
-
         [Display(Name = "مرد")]
         Male = 1,
 
@@ -71,11 +68,9 @@ namespace EnumValue
     }
     public enum UserType : byte
     {
-        [Display(Name = "نا مشخص")]
-        None = 1,
         [Display(Name = "کاربر عادی")]
         SimpleUser = 2,
-        [Display(Name = "آزانس")]
+        [Display(Name = "آژانس")]
         Agency = 3,
         [Display(Name = "مدیریت")]
         Admin = 4,
