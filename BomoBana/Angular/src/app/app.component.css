@@ -1,0 +1,120 @@
+
+@media (max-width: 992px) {
+    .responsivemenu{
+        margin-top: -13px;
+        }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    .responsivemenu{
+        margin-top: 0px;
+        }
+        #navbarTogglerDemo02 > ul > li.nav-item{
+            margin: 0px 0px 0px 30px !important;
+        
+        }
+
+}
+#navbarTogglerDemo02 > ul > li.nav-item:nth-child(5) > a{
+    background: white;
+    color: #00a34a !important;
+    border-radius: 50px;
+    margin-top: 5px;
+    width: 134px;
+    height: 30px;
+    text-align: center;
+    line-height: 1;
+}
+#navbarTogglerDemo02 > ul > li.nav-item{
+    margin: 0px 40px 0px 30px;
+
+}
+ /* a{
+text-decoration:none !important ;
+} */
+.endfooter{
+    width: 100px !important;
+}
+.footermenu{
+    list-style:none;
+    padding-right: 0px;
+}
+footer{
+/* position: absolute; */
+    bottom: 0;
+    width: 100%;
+}
+.botom{
+   padding-top: 25px; 
+}
+.ertebat{
+    text-align: center;
+    padding: 5px;
+}
+.appmobile{
+
+    list-style: none; 
+}
+.namad{
+    margin-bottom: 15px;
+    width: 55%;
+    height: auto;   
+}
+.imgs{
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+}
+.conectus{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+}
+.footer{
+    
+    text-align: right;
+    color: white;
+    font-size: 13px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background: #00a34a ;  
+}
+.bootemfooter{
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    color: lightgray;
+    font-size: 15px;
+    background: #02893c ;  
+}
+.logo{
+    width: 62px;
+    height: auto;
+}
+.navmenu{
+    height: 62px;
+}
+#navbarTogglerDemo02 > ul > li:nth-child(3) a{
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-top: 5px;
+    width: 168px;
+    height: 30px;
+    text-align: center;
+    line-height: 1;
+}
+
+#navbarTogglerDemo02 > ul > li.nav-item > a{
+    color: white !important;
+    }
+.app {
+  font-family: IRANSans3 !important;
+  margin: auto;
+  margin-top: 20px;
+}
+.colorgreen{
+    background: #00a34a;
+}
+nav{
+    border-radius: 51px;
+}

@@ -1,0 +1,6 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+  font-family: IRANSans3 !important;
+  color: black;
+  font-weight: 400;
+}

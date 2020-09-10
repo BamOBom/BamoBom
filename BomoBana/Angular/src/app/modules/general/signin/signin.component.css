@@ -1,0 +1,60 @@
+.styleradus{
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 38px;
+    background: white;
+    color: black;
+    font-size: 13px;
+   
+}
+.sometext{
+    font-size: 10px;
+}
+.welcome{
+    font-size: 28px;
+    color: #7d6969;
+    margin-top: 422px;
+    margin-bottom: 39px;
+    text-align: center;
+}
+.tab-content{
+    height: 215px;
+}
+.stylesabt{
+    margin: auto;
+    width: 70%;
+    height: 34px;
+    border-radius: 38px;
+    background: #00a34a;
+    color: white;
+    font-size: 15px;
+    line-height: initial;  
+}
+.tablogin{
+    padding-right: 0px;
+    margin-bottom: 13px;
+    margin-top: 0px;
+    border-bottom: none !important;
+}
+.active{
+    color: #00a34a !important;
+    display: inline;
+}
+:focus{
+    color: #00a34a !important;  
+}
+:active{
+    color: #00a34a !important;  
+}
+.loginfirst{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(193 206 206 / 18%);
+    border-radius: 23px;
+    width: 309px;
+    height: 309px;
+    float: left;
+    padding: 5px 35px 10px 35px;
+    margin: 70px 0px 0px 100px;
+}
