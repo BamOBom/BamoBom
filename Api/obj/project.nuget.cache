@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KYNeW2YMWHYJi1GItdrNXpbujVXeYTykJuIfoEsGeInxnNV+IiqDbCXrsJ00NRCVmAk3a49Y8fXkFIh/XeRR3Q==",
+  "dgSpecHash": "E+yS+HCHMG7K280X/QQSchH2xPFkIgYQMULEC83qYolV+HijyQMu9VHSEFVl6Y85Pnd3h0v2y11//XKjq/n++g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Api\\Api.csproj",
+  "projectFilePath": "D:\\bamasli\\BamoBom\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\illiya.ir\\.nuget\\packages\\autofac\\5.0.0\\autofac.5.0.0.nupkg.sha512",
     "C:\\Users\\illiya.ir\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",

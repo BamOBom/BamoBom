@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\New folder\\BamoBom\\Common\\Common.csproj": {}
+    "D:\\bamasli\\BamoBom\\Common\\Common.csproj": {}
   },
   "projects": {
-    "D:\\New folder\\BamoBom\\Common\\Common.csproj": {
+    "D:\\bamasli\\BamoBom\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\New folder\\BamoBom\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\bamasli\\BamoBom\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "D:\\New folder\\BamoBom\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\emertat\\.nuget\\packages\\",
-        "outputPath": "D:\\New folder\\BamoBom\\Common\\obj\\",
+        "projectPath": "D:\\bamasli\\BamoBom\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\illiya.ir\\.nuget\\packages\\",
+        "outputPath": "D:\\bamasli\\BamoBom\\Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\emertat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\illiya.ir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

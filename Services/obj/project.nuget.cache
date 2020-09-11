@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sK7BHxsujM15cv1/AxSDJ4p55edI2nW0+KN/BbZ8bJOsHC/+8ESZN9/8atvOufjFM0FJ+hZ71n+P+xvMkCx4Tw==",
+  "dgSpecHash": "8CNom60/hT7CUcCgHNwsjLN8vSY9kT1EmIsUBVLfedYnt2Nwrwg96txClHOboaG89d3JqtHnOMXiCG1Pgta/ow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Services\\Services.csproj",
+  "projectFilePath": "D:\\bamasli\\BamoBom\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\illiya.ir\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\illiya.ir\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

@@ -1496,3 +1496,20 @@
 2020-09-10 17:20:17.6339 Info Found 53 configuration items
 2020-09-10 17:20:17.6711 Info Configuration initialized.
 2020-09-10 17:20:17.6719 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.8.10751. Product version: 4.6.8.
+2020-09-11 10:23:03.3582 Info Auto loading assembly file: D:\bamasli\BamoBom\BomoBana\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-09-11 10:23:03.4542 Info Loading assembly file: D:\bamasli\BamoBom\BomoBana\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-09-11 10:23:03.7122 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.2.1321. Product version: 1.6.2.
+2020-09-11 10:23:03.7422 Info Auto loading assembly file: D:\bamasli\BamoBom\BomoBana\bin\Release\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-09-11 10:23:03.7422 Info Auto loading assembly file: D:\bamasli\BamoBom\BomoBana\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-09-11 10:23:03.7422 Info Loading assembly file: D:\bamasli\BamoBom\BomoBana\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll
+2020-09-11 10:23:03.7422 Info NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.9.2.1619. Product version: 4.9.2.
+2020-09-11 10:23:03.7592 Info Auto loading assembly file: D:\bamasli\BamoBom\BomoBana\bin\Release\netcoreapp3.1\NLog.Web.AspNetCore.dll succeeded!
+2020-09-11 10:23:03.7592 Info Message Template Auto Format enabled
+2020-09-11 10:23:03.7592 Info Loading assembly: NLog.Web.AspNetCore
+2020-09-11 10:23:03.7592 Info Loading assembly: Sentry.NLog
+2020-09-11 10:23:04.4733 Info Adding target AsyncTargetWrapper(Name=LogFile)
+2020-09-11 10:23:04.4923 Info Adding target AsyncTargetWrapper(Name=ColorConsole)
+2020-09-11 10:23:04.5233 Info Adding target AsyncTargetWrapper(Name=Sentry)
+2020-09-11 10:23:05.0283 Info Found 53 configuration items
+2020-09-11 10:23:05.4453 Info Configuration initialized.
+2020-09-11 10:23:05.4453 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.6.8.10751. Product version: 4.6.8.

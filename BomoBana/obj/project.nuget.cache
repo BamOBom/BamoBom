@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xlApQGcclp/zYPlms2RBR/At+wqOP4nurIKH3zQDmVQcTsXPP6kocYX40k8IKSuq7Vo/V91vsN0ukc+iCHdQUg==",
+  "dgSpecHash": "nOQD6t6ySMkRmEnVIQnY5kSD9zliGT8d/wfEUHYcAHuR0v8kf2kDPU4hxOKCPBu8TG8F4bwoj4m78TA3LP8kOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\BomoBana\\BomoBana.csproj",
+  "projectFilePath": "D:\\bamasli\\BamoBom\\BomoBana\\BomoBana.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\illiya.ir\\.nuget\\packages\\advancedstringbuilder\\0.1.0\\advancedstringbuilder.0.1.0.nupkg.sha512",
     "C:\\Users\\illiya.ir\\.nuget\\packages\\autofac\\5.0.0\\autofac.5.0.0.nupkg.sha512",

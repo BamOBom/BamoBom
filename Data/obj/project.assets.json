@@ -5664,23 +5664,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emertat\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\illiya.ir\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\New folder\\BamoBom\\Data\\Data.csproj",
+      "projectUniqueName": "D:\\bamasli\\BamoBom\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "D:\\New folder\\BamoBom\\Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\emertat\\.nuget\\packages\\",
-      "outputPath": "D:\\New folder\\BamoBom\\Data\\obj\\",
+      "projectPath": "D:\\bamasli\\BamoBom\\Data\\Data.csproj",
+      "packagesPath": "C:\\Users\\illiya.ir\\.nuget\\packages\\",
+      "outputPath": "D:\\bamasli\\BamoBom\\Data\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\emertat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\illiya.ir\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5693,8 +5689,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\New folder\\BamoBom\\Entities\\Entities.csproj": {
-              "projectPath": "D:\\New folder\\BamoBom\\Entities\\Entities.csproj"
+            "D:\\bamasli\\BamoBom\\Entities\\Entities.csproj": {
+              "projectPath": "D:\\bamasli\\BamoBom\\Entities\\Entities.csproj"
             }
           }
         }
@@ -5734,7 +5730,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

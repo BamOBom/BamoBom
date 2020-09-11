@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rhfrlKjX1/lscy1okZdODjp5VCqpU5zrWpkLk8E5YV7FIxnCZ8I6i++xicPAVGHOp9kE3MzI2fensBHCLlOMFA==",
+  "dgSpecHash": "WVQiR5wiQU03VtsEHwweOfR42XepirstyWBMXoDued5A/3mNL7J+z/NyYhdKy4NEW3j88pBMQAPUw68VHZhGXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Data\\Data.csproj",
+  "projectFilePath": "D:\\bamasli\\BamoBom\\Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\illiya.ir\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\illiya.ir\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.5\\microsoft.aspnetcore.cryptography.internal.3.1.5.nupkg.sha512",

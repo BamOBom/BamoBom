@@ -1,0 +1,8 @@
+2020-09-11 10:23:16.1069 | WARN | No type was specified for the decimal column 'RequestedSalary' on entity type 'JobRequest'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. |  | Microsoft.EntityFrameworkCore.Model.Validation | url:  | action: 
+2020-09-11 10:23:35.7910 | ERROR | Option "port" was already specified with value 4200. The new value 2082 will override it.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-11 10:23:50.9419 | ERROR |     WARNING: Zone.js does not support native async/await in ES2017.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 
+2020-09-11 10:23:50.9419 | ERROR |     These blocks are not intercepted by zone.js and will not triggering change detection.
+    See: https://github.com/angular/zone.js/pull/1140 for more information.
+ |  | Microsoft.AspNetCore.SpaServices | url:  | action: 

@@ -91,3 +91,34 @@ D:\New folder\BamoBom\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyCompl
 D:\New folder\BamoBom\Services\obj\Debug\netcoreapp3.1\Services.dll
 D:\New folder\BamoBom\Services\obj\Debug\netcoreapp3.1\Services.pdb
 D:\New folder\BamoBom\Services\obj\Debug\netcoreapp3.1\Services.genruntimeconfig.cache
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Services.deps.json
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Services.runtimeconfig.json
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Services.runtimeconfig.dev.json
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Services.dll
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Services.pdb
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Common.dll
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Data.dll
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Entities.dll
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Core.dll
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Routing.dll
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Data.pdb
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Common.pdb
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Core.xml
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Routing.xml
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.xml
+D:\bamasli\BamoBom\Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.xml
+D:\bamasli\BamoBom\Services\obj\Debug\netcoreapp3.1\Services.csprojAssemblyReference.cache
+D:\bamasli\BamoBom\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfoInputs.cache
+D:\bamasli\BamoBom\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfo.cs
+D:\bamasli\BamoBom\Services\obj\Debug\netcoreapp3.1\Services.csproj.CoreCompileInputs.cache
+D:\bamasli\BamoBom\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyComplete
+D:\bamasli\BamoBom\Services\obj\Debug\netcoreapp3.1\Services.dll
+D:\bamasli\BamoBom\Services\obj\Debug\netcoreapp3.1\Services.pdb
+D:\bamasli\BamoBom\Services\obj\Debug\netcoreapp3.1\Services.genruntimeconfig.cache

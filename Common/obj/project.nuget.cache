@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dUlaSeEEYp61n6DqhguZO+DjW4/whJ799r+Q3+VTWT6dvwQn+UbRXjflskscQjyMlVfvkGY69tRIMpJCQV+0MQ==",
+  "dgSpecHash": "7Z9pGPRQAMRR+Fk+nicZSyc7VMzHhdJoy2favawYr7bQxP7kFFh8VJZbs0x7nzLRNBaj61xHVS60hGB+sI+SvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\illiya.ir\\Documents\\GitHub\\BamoBom\\Common\\Common.csproj",
+  "projectFilePath": "D:\\bamasli\\BamoBom\\Common\\Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\illiya.ir\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\illiya.ir\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.5\\microsoft.aspnetcore.http.features.3.1.5.nupkg.sha512",

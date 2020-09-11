@@ -61,3 +61,24 @@ D:\New folder\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csproj.C
 D:\New folder\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.dll
 D:\New folder\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.pdb
 D:\New folder\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.genruntimeconfig.cache
+D:\bamasli\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.deps.json
+D:\bamasli\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.runtimeconfig.json
+D:\bamasli\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.runtimeconfig.dev.json
+D:\bamasli\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.dll
+D:\bamasli\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.pdb
+D:\bamasli\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Common.dll
+D:\bamasli\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Data.dll
+D:\bamasli\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Entities.dll
+D:\bamasli\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Services.dll
+D:\bamasli\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Services.pdb
+D:\bamasli\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Common.pdb
+D:\bamasli\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Data.pdb
+D:\bamasli\BamoBom\WebFramework\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\bamasli\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csprojAssemblyReference.cache
+D:\bamasli\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.AssemblyInfoInputs.cache
+D:\bamasli\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.AssemblyInfo.cs
+D:\bamasli\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csproj.CoreCompileInputs.cache
+D:\bamasli\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csproj.CopyComplete
+D:\bamasli\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.dll
+D:\bamasli\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.pdb
+D:\bamasli\BamoBom\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.genruntimeconfig.cache
