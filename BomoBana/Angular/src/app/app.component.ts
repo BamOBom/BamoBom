@@ -8,10 +8,17 @@ import {TranslateService
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  home: boolean = true;
+  rezervitem: boolean = false;
   constructor(location: Location,public translate: TranslateService
    
 ) {
   translate.setDefaultLang('fa');
   translate.use('fa');
+}
+rezerv(){
+  debugger
+  this.rezervitem=true;
+  this.home=false;
 }
 }

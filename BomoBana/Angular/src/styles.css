@@ -4,3 +4,6 @@ body {
   color: black;
   font-weight: 400;
 }
+a{
+  text-decoration: none;
+}

@@ -1,12 +1,12 @@
 <div class="app" dir="rtl">
   <header class="container">
-    <nav class="navbar navbar-expand-lg navbar-light colorgreen navmenu">
-      <a class="navbar-brand" href="#"> <img class="logo responsivemenu"  src="../assets/img/logo.jpg"/></a>
+    <nav *ngIf="home" class="navbar navbar-expand-lg navbar-light colorgray navmenu">
+      <a class="navbar-brand" href="#"> <img class="logo responsivemenu"  src="../assets/img/logo.png"/></a>
       <button class="navbar-toggler responsivemenu" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" routerLink="/signin">{{"payget"| translate}} <span class="sr-only">(current)</span></a>
@@ -15,7 +15,7 @@
             <a class="nav-link" routerLink="/signin">{{"rent"| translate}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " routerLink="/signin">{{"rezerv"| translate}}</a>
+            <a class="nav-link " (click)="rezerv()" routerLink="/signin">{{"rezerv"| translate}}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link"   routerLink="/signin">{{"login"| translate}}</a>
@@ -54,7 +54,7 @@
         </ul>
       </div>
     </nav>
-    <nav style="display: none;"   class="navbar navbar-expand-lg navbar-light colorgreen navmenu">
+    <nav *ngIf="rezervitem"   class="navbar navbar-expand-lg navbar-light colorgreen navmenu">
       <a class="navbar-brand" href="#"> <img class="logo responsivemenu"  src="../assets/img/logo.jpg"/></a>
       <button class="navbar-toggler responsivemenu" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

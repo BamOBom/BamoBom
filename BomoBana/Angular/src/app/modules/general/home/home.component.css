@@ -1,0 +1,110 @@
+.tabsearch{
+    font-size: 19px;
+    padding: 7px 60px 7px 60px;
+    background: gray;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+  }
+  .flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .tabbasesearch{
+    padding: 15px;
+    margin: auto;
+  }
+ul.tabbasesearch > li{
+  margin: 5px;
+  }
+  .searchtab{
+    min-height: 388px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+  }
+  .form-control{
+    border:none !important;
+    border-left:1px solid gray !important;
+    border-radius: 0rem;
+  }
+  .besidebutton3{
+    width: 160px;
+  }
+ .besidebutton3 > select{
+    border-left: none !important;
+  }
+  .besidebutton{
+        width: 83px;
+  }
+  .nav-tabs{
+    border-bottom: none !important;
+  }
+  .bybuton{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+  }
+  button.form-control{
+    border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+    text-align: center;
+    width: 155px !important;
+    height: 48px;
+    background: #00a34a !important;
+    color: white;
+  }
+  button.form-control.rest{
+    border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+    text-align: center;
+    width: 155px !important;
+    height: 48px;
+    background: #fd6801 !important;
+    color: white;
+  }
+  select.form-control{
+    background: none !important;
+  }
+  .search{
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px #00000040;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 89%;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 41px;
+  }
+.active{
+  
+    display: inline;
+}
+.tabsearch3{
+  font-size: 19px;
+    padding: 7px 45px 7px 45px;
+    background: gray;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.active.tabsearch3{
+  color: white!important;
+  background: #fd6801 !important;
+}
+.active.tabsearch{
+  color: white!important;
+  background: #00a34a !important;
+}
+:focus{
+    color: #00a34a !important;  
+}
+:active{
+    color: #00a34a !important;  
+}
