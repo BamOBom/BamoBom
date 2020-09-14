@@ -11,7 +11,7 @@
                     <a>{{ "editpro" | translate }}</a>
                 </div>
             </div>
-            <hr>
+            <!-- <hr> -->
             <div>
                 <ul class="flexcolomn nav nav-tabs">
                     <li class="active"><a href="#home" data-toggle="tab">{{"mypro"| translate}}</a></li>
@@ -28,11 +28,315 @@
     </div>
     <div class="col-md-9">
         <div class="tab-content">
-            <div class="tab-pane active" id="home">                
-                <div class="">
-                    <h1>Home Tab</h1>
-                    <p>These lists are meant to identify articles which deserve editor attention because they are the most important for an encyclopedia to have, as determined by the community of participating editors. They may also be of interest to readers as an alternative to lists of overview articles.</p>                 
-                </div>
+            <div class="tab-pane active" id="home">
+            <div class="mx-auto">
+                    
+                        <form class="form" #registerForm="ngForm" [appMatchPassword]="['password', 'confirmPassword']"
+                            (ngSubmit)="registerForm.form.valid && onSubmit()" novalidate>
+                            <div class="row col-md-12">
+                                <div class="col-md-12">
+                                    <h5>{{"infohaghighi" | translate}}</h5>
+                                </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"name" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.name" name="name"
+                                    #name="ngModel" required>
+                                <span class="text-danger"
+                                    *ngIf="(name.touched || registerForm.submitted) && name.errors?.required">
+                                    Name is required
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"family" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.name" name="name"
+                                    #name="ngModel" required>
+                                <span class="text-danger"
+                                    *ngIf="(name.touched || registerForm.submitted) && name.errors?.required">
+                                    Name is required
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"email" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.email" name="email"
+                                    #email="ngModel" required email>
+                                <span class="text-danger"
+                                    *ngIf="(email.touched || registerForm.submitted) && email.errors?.required">
+                                    Email is required
+                                </span>
+                                <span class="text-danger" *ngIf="email.touched && email.errors?.email">
+                                    Enter a valid email address
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"username" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"tell" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"cellphon" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"codemeli" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"sex" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"age" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <hr>
+                            <div class="col-md-12">
+                                <h5>{{"infohoghoghi" | translate}}</h5>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"sabtid" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"meliid" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"eghtesadicode" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"eghtesadicode" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"tell" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"postalcode" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"precustomer" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"address" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <hr>
+                            <div class="col-md-12">
+                                <h5>{{"infohesab" | translate}}</h5>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"namehesab" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"hesab" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"card" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"bank" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"sheba" | translate}}</label>
+                                <input type="text" class="form-control" [(ngModel)]="userModal.username" name="username"
+                                    #username="ngModel" appValidateUserName required>
+                                <span class="text-danger"
+                                    *ngIf="(username.touched || registerForm.submitted) && username.errors?.required">
+                                    User Name is required
+                                </span>
+                                <span class="text-danger" *ngIf="username.touched && username.errors?.userNameNotAvailable">
+                                    User Name not available
+                                </span>
+                            </div>
+                            <!-- <div class="col-md-6 form-group">
+                                <label>{{"password" | translate}}</label>
+                                <input type="password" class="form-control" [(ngModel)]="userModal.password" name="password"
+                                    #password="ngModel" appPasswordPattern required>
+                                <span class="text-danger"
+                                    *ngIf="(password.touched || registerForm.submitted) && password.errors?.required">
+                                    Password is required
+                                </span>
+                                <span class="text-danger" *ngIf="password.touched && password.errors?.invalidPassword">
+                                    Password should have minimum 8 characters, at least 1 uppercase letter, 1 lowercase
+                                    letter and 1 number
+                                </span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>{{"confirmpassword" | translate}}</label>
+                                <input type="password" class="form-control" [(ngModel)]="userModal.confirmPassword"
+                                    name="confirmPassword" #confirmPassword="ngModel" required>
+                                <span class="text-danger"
+                                    *ngIf="(confirmPassword.touched || registerForm.submitted) && confirmPassword.errors?.required">
+                                    Confirm Password is required
+                                </span>
+                                <span class="text-danger"
+                                    *ngIf="confirmPassword.touched && confirmPassword.errors?.passwordMismatch">
+                                    Passwords doesnot match
+                                </span>
+                            </div> -->
+                            <div class="col-md-6 form-group">
+                                <button type="submit" class="btn btn-success">{{"editinfopro"|translate}}</button>
+                            </div>
+                            </div>
+                        </form>
+                  
+            </div>
+     
             </div> 
             <div class="tab-pane" id="about"> 
                 <div class="">
