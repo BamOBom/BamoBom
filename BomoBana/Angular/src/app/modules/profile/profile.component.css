@@ -1,0 +1,132 @@
+.profile{
+    min-height: 388px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+}
+.imgpro{
+    margin: 30px 10px 10px 10px;
+    width: 80px;
+    height: 80px;
+    border: 3px solid gray;
+    border-radius: 100%;
+}
+
+.imgpro img{
+    width: 100%;
+}
+.welcomuser{
+    color: #00a34a !important;
+    font-size: 20px
+}
+.editpro{
+    font-size: 10px;
+    color: gray;
+}
+.flex-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sideright{
+    background: #80808029;
+    border-radius: 14px;
+}
+.flexcolomn li.active{
+    background:#00a34a  !important;
+    color: white !important;
+}
+.flexcolomn li.active a{
+    color: white !important;
+}
+.flexcolomn li a.active{
+    color: #fd6801  !important;
+    font-weight: 300;
+}
+.flexcolomn li:hover{
+    background:#00a34a  !important;
+    color: white !important;
+}
+.flexcolomn li a:hover{
+    color: white !important;
+}
+.flexcolomn a{
+    color: gray ;
+    padding: 13px 13px 13px 120px;
+}
+.flexcolomn li{
+    padding: 10px 0px 10px 0px;
+}
+
+.flexcolomn{
+    flex-direction: column;
+    text-align: right;
+    padding-bottom: 30px;
+    padding-right: 0px;
+  
+}
+.tab-content{
+    background: #80808029;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;  
+}
+.tabs-left > .nav-tabs {
+    border-bottom: 0;
+  }
+  
+  .tab-content > .tab-pane,
+  .pill-content > .pill-pane {
+    display: none;
+  }
+  
+  .tab-content > .active,
+  .pill-content > .active {
+    display: block;
+  }
+  
+  .tabs-left > .nav-tabs > li {
+    float: none;
+  }
+  
+  .tabs-left > .nav-tabs > li > a {
+    min-width: 74px;
+    margin-right: 0;
+    margin-bottom: 3px;
+  }
+  
+  .tabs-left > .nav-tabs {
+    float: left;
+    margin-right: 19px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .tabs-left > .nav-tabs > li > a {
+    margin-right: -1px;
+    -webkit-border-radius: 4px 0 0 4px;
+       -moz-border-radius: 4px 0 0 4px;
+            border-radius: 4px 0 0 4px;
+  }
+  
+  .tabs-left > .nav-tabs > li > a:hover,
+  .tabs-left > .nav-tabs > li > a:focus {
+    border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+  }
+  
+  .tabs-left > .nav-tabs .active > a,
+  .tabs-left > .nav-tabs .active > a:hover,
+  .tabs-left > .nav-tabs .active > a:focus {
+    border-color: #ddd transparent #ddd #ddd;
+    *border-right-color: #ffffff;
+  }

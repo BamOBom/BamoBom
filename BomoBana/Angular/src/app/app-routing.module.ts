@@ -7,7 +7,7 @@ import { ContactComponent } from './modules/general/contact/contact.component';
 import { HomeComponent } from './modules/general/home/home.component';
 import { SigninComponent } from './modules/general/signin/signin.component';
 import { NotFoundComponent } from './modules/general/not-found/not-found.component';
-import { ProfileComponent } from './profile/profile.component';
+import { ProfileComponent } from './modules/profile/profile.component';
 import { BuyandrentComponent } from './modules/buyandrent/buyandrent.component';
 import { RentComponent } from './modules/rent/rent.component';
 import { DetailebuyandrentComponent } from './modules/detailebuyandrent/detailebuyandrent.component';

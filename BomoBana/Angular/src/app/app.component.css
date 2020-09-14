@@ -16,6 +16,10 @@
             margin: 0px 0px 0px 30px !important;
         
         }
+        #navbarTogglerDemo01 > ul > li.nav-item{
+            margin: 0px 0px 0px 30px !important;
+        
+        }
 
 }
 #navbarTogglerDemo03 > ul > li.nav-item:nth-child(5) > a{
@@ -37,6 +41,19 @@
     height: 30px;
     text-align: center;
     line-height: 1;
+}
+#navbarTogglerDemo01 > ul > li.nav-item:nth-child(5) > a{
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-top: 5px;
+    width: 134px;
+    height: 30px;
+    text-align: center;
+    line-height: 1;
+}
+#navbarTogglerDemo01 > ul > li.nav-item{
+    margin: 0px 40px 0px 30px;
+
 }
 #navbarTogglerDemo02 > ul > li.nav-item{
     margin: 0px 40px 0px 30px;
@@ -112,16 +129,7 @@ footer{
 .navmenu{
     height: 62px;
 }
-#navbarTogglerDemo02 > ul > li:nth-child(3) a{
-    border: 1px solid white;
-    border-radius: 50px;
-    margin-top: 5px;
-    width: 168px;
-    height: 30px;
-    text-align: center;
-    line-height: 1;
-}
-#navbarTogglerDemo02 > ul > li:nth-child(3) a{
+#navbarTogglerDemo01 > ul > li:nth-child(3) a{
     border: 1px solid white;
     border-radius: 50px;
     margin-top: 5px;
@@ -131,6 +139,18 @@ footer{
     line-height: 1;
 }
 
+#navbarTogglerDemo02 > ul > li:nth-child(3) a{
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-top: 5px;
+    width: 168px;
+    height: 30px;
+    text-align: center;
+    line-height: 1;
+}
+ul > li.nav-item> a{
+color: white !important;
+}
 .app {
   font-family: IRANSans3 !important;
   margin: auto;
@@ -141,6 +161,9 @@ footer{
 }
 .colorgray{
     background: #8080802e;
+}
+.colororang{
+    background: #fd6801;
 }
 nav{
     border-radius: 51px;
